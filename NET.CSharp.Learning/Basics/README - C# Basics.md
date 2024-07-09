@@ -36,3 +36,11 @@ int count;
 - Avoid to use underscore at the beginning.
 - Use descriptive names. Avoid contractions or abbreviations.
 - Don't include the data type on the name of the variable.
+
+## Implicitly type
+An implicitly typed local variable is created by using the var keyword followed by a variable initialization.
+The var keyword tells the compiler to infer the data type of the variable based on the value it is initialized to.
+
+```
+var message = "Hello world!";
+```
