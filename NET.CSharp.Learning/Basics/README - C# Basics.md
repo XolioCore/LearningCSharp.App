@@ -25,11 +25,11 @@ int count;
 ```
 **Considerations about variable names**
 
-- Variable names can contain alphanumeric characters and the underscore character.
+- Can contain alphanumeric characters and the underscore character.
 - Special characters like the hash symbol # (also known as the number symbol or pound symbol) or dollar symbol $ are not allowed.
-- Variable names must begin with an alphabetical letter or an underscore, not a number.
-- Variable names are case-sensitive, meaning that string Value; and string value; are two different variables.
-- Variable names must not be a C# keyword. For example, you cannot use the following variable declarations: decimal decimal; or string string;.
+- Must begin with an alphabetical letter or an underscore, not a number.
+- They are case-sensitive, meaning that string Value; and string value; are two different variables.
+- Must not be a C# keyword. For example, you cannot use the following variable declarations: decimal decimal; or string string;.
 
 **Coding recomendations**
 - Use camel case convention. For example: ```string myVariable```
@@ -43,4 +43,15 @@ The var keyword tells the compiler to infer the data type of the variable based 
 
 ```
 var message = "Hello world!";
+```
+
+## Formatting strings
+
+### Escape character sequences
+- \n sequence will add a new line
+- \t sequence will add a tab
+
+```
+Console.WriteLine("Hello\nWorld!");
+Console.WriteLine("Hello\tWorld!");
 ```
