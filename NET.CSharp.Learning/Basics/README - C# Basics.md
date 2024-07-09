@@ -65,3 +65,22 @@ Console.Write(@"c:\test");
 // Kon'nichiwa World
 Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");
 ```
+### Concatenate strings
+To concatenate two strings together, you use the string concatenation operator, which is the plus symbol +.
+
+```cs
+string firstName = "Bob";
+string message = "Hello " + firstName;
+```
+### String interpolation
+String interpolation combines multiple values into a single literal string by using a "template" and one or more interpolation expressions. 
+An interpolation expression is indicated by an opening and closing curly brace symbol { }. You can put any C# expression that returns a value inside the braces. 
+The literal string becomes a template when it's prefixed by the $ character.
+```cs
+string message = $"{greeting} {firstName}!";
+```
+**Using Verbatim literals**
+```cs
+string projectName = "First-Project";
+Console.WriteLine($@"C:\Output\{projectName}\Data");
+```
