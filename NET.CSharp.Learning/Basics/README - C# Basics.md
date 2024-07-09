@@ -19,7 +19,7 @@ There are many data types, but for starting level we'll focus on just a few for 
 ## Variables
 A variable is a container for storing a type of value. Variables are temporary values you store in the computer's memory
 
-```c#
+```cs
 string name;
 int count;
 ```
@@ -41,7 +41,7 @@ int count;
 An implicitly typed local variable is created by using the var keyword followed by a variable initialization.
 The var keyword tells the compiler to infer the data type of the variable based on the value it is initialized to.
 
-```
+```cs
 var message = "Hello world!";
 ```
 
@@ -57,7 +57,7 @@ Use character escape sequences when you need to insert a special character into 
 - @ directive to create a verbatim string literal that keeps all whitespace formatting and backslash characters in a string.
 - \u plus a four-character code to represent Unicode characters (UTF-16) in a string
 
-```
+```cs
 Console.WriteLine("Hello\nWorld!");
 Console.WriteLine("Hello\tWorld!");
 Console.WriteLine("\nOutput Directory:\t");
