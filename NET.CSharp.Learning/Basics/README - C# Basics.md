@@ -52,10 +52,16 @@ Use character escape sequences when you need to insert a special character into 
 
 - \n sequence will add a new line
 - \t sequence will add a tab
-- \" for double quotation mark
+- \\" for double quotation mark
 - \\ when you need to use a backslash in all other scenarios
+- @ directive to create a verbatim string literal that keeps all whitespace formatting and backslash characters in a string.
+- \u plus a four-character code to represent Unicode characters (UTF-16) in a string
 
 ```
 Console.WriteLine("Hello\nWorld!");
 Console.WriteLine("Hello\tWorld!");
+Console.WriteLine("\nOutput Directory:\t");
+Console.Write(@"c:\test");
+// Kon'nichiwa World
+Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");
 ```
