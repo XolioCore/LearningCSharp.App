@@ -48,8 +48,12 @@ var message = "Hello world!";
 ## Formatting strings
 
 ### Escape character sequences
+Use character escape sequences when you need to insert a special character into a literal string.
+
 - \n sequence will add a new line
 - \t sequence will add a tab
+- \" for double quotation mark
+- \\ when you need to use a backslash in all other scenarios
 
 ```
 Console.WriteLine("Hello\nWorld!");
