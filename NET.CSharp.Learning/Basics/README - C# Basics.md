@@ -7,7 +7,6 @@ This section contains topics to learn the basics of C#, I hope this can help oth
 ## Data Types
 There are many data types, but for starting level we'll focus on just a few for now:
 
-
 | Type |  Description  | Example |
 |:-----|:--------|------|
 | **char**   |used for a single alphanumeric character | 'b' |
@@ -15,3 +14,25 @@ There are many data types, but for starting level we'll focus on just a few for 
 | **int**   | used for a whole number | 1 |
 | **decimal**   | used for a number with a fractional component | 2.625, 12.3981m |
 | **bool**   | used for a true/false value | true |
+
+
+## Variables
+A variable is a container for storing a type of value. Variables are temporary values you store in the computer's memory
+
+```c#
+string name;
+int count;
+```
+**Considerations about variable names**
+
+- Variable names can contain alphanumeric characters and the underscore character.
+- Special characters like the hash symbol # (also known as the number symbol or pound symbol) or dollar symbol $ are not allowed.
+- Variable names must begin with an alphabetical letter or an underscore, not a number.
+- Variable names are case-sensitive, meaning that string Value; and string value; are two different variables.
+- Variable names must not be a C# keyword. For example, you cannot use the following variable declarations: decimal decimal; or string string;.
+
+**Coding recomendations**
+- Use camel case convention. For example: ```string myVariable```
+- Avoid to use underscore at the beginning.
+- Use descriptive names. Avoid contractions or abbreviations.
+- Don't include the data type on the name of the variable.
