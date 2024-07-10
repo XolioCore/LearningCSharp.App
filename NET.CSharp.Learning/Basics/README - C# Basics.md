@@ -126,3 +126,30 @@ In math, PEMDAS is an acronym that helps to remember the order of operations. Th
 - Exponents (No operator on C#)
 - Multiplication and Division (from left to right)
 - Addition and Subtraction (from left to right)
+
+### Increment and Decrement
+
+To increment and/or decrement values, especially when you're writing looping logic or code that interacts with a data structure.
+
+The += operator adds and assigns the value on the right of the operator to the value on the left of the operator
+```cs
+int value = 0;     // value is now 0.
+value = value + 5; // value is now 5.
+value += 5;        // value is now 10.
+```
+The ++ operator increments the value of the variable by 1. So, lines two and three in the following code snippet are the same:
+```cs
+int value = 0;     // value is now 0.
+value = value + 1; // value is now 1.
+value++;           // value is now 2.
+```
+
+If you use the operator before the value as in ++value, then the increment will happen before the value is retrieved. Likewise, value++ will increment the value after the value has been retrieved.
+```cs
+int value = 1;
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine($"Second: {value++}");
+Console.WriteLine("Third: " + value);
+Console.WriteLine("Fourth: " + (++value));
+```
