@@ -84,3 +84,28 @@ string message = $"{greeting} {firstName}!";
 string projectName = "First-Project";
 Console.WriteLine($@"C:\Output\{projectName}\Data");
 ```
+
+## Math operations
+
+### BAsic Operations
+- **Addition** + is the addition operator
+- **Subtraction** - is the subtraction operator
+- **Multiplication** * is the multiplication operator
+- **Division** / is the division operator
+
+```cs
+int firstNumber = 12;
+int secondNumber = 7;
+Console.WriteLine(firstNumber + secondNumber);
+```
+### Casting numbers
+
+Casting is one type of data conversion that instructs the compiler to temporarily treat a value as if it were a different data type.
+To cast you add the cast operator before the value. 
+
+```cs
+int first = 7;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);
+```
