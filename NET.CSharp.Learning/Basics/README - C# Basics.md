@@ -109,3 +109,20 @@ int second = 5;
 decimal quotient = (decimal)first / (decimal)second;
 Console.WriteLine(quotient);
 ```
+### Determine the remainder after integer division
+The modulus operator % tells you the remainder of int division. 
+What you really learn from this is whether one number is divisible by another. 
+
+```cs
+Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+```
+
+### Order of operations
+You can use the () symbols as the order of operations operators.
+
+In math, PEMDAS is an acronym that helps to remember the order of operations. The order is:
+
+- Parentheses (whatever is inside the parenthesis is performed first)
+- Exponents (No operator on C#)
+- Multiplication and Division (from left to right)
+- Addition and Subtraction (from left to right)
