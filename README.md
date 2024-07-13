@@ -64,3 +64,13 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 
 1. Open a new Terminal
 2. Run command dotnet --version
+
+## Create your first console application
+
+1. Run command ```dotnet new console -o path/projectname```
+![image](https://github.com/user-attachments/assets/aa991c31-70e5-4d9a-8eef-2631cc2db8aa)
+
+2. Implemente changes and save.
+3. Build project ```$dotnet build```
+4. Run the project ```$dotnet run```
+
