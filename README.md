@@ -83,3 +83,11 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 - Stateful (instance) methods keep track of their state in fields, which are variables defined on the class. Each new instance of the class gets its own copy of those fields in which to store state.
 - However, when you need to call stateful methods, you must first create an instance of the class so that the method can access state.
 
+## Methods
+- Methods might accept no parameters or multiple parameters, depending on how they were designed and implemented. When passing in multiple parameters, separate them with a , symbol.
+- Method parameters are variables used inside the method. The method definition specifies the names and types of any parameters that are required. When a caller invokes the method, the calling statement provides concrete values, called arguments, for each parameter.
+- Methods might return a value when they complete their task, or they might return nothing (void).
+- Overloaded methods support several implementations of the method, each with a unique method signature (the number of parameters and the data type of each parameter).
+- IntelliSense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their parameters.
+- learn.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.
+
