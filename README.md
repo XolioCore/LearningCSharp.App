@@ -56,8 +56,11 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 1. On the Activity bar, select Extensions.
 2. In the Search Extensions in Marketplace textbox, enter IntelliCode for C#
 3. In the filtered list of available extensions, select the extension labeled IntelliCode for C# Dev Kit - AI-assisted development for C# Dev Kit published by Microsoft.
-
+   
 ![image](https://github.com/user-attachments/assets/2d562b95-23ac-44a2-b751-6ebee8f98dd9)
 
-   
 5. Select Install.
+### Verify Dotnet version
+
+1. Open a new Terminal
+2. Run command dotnet --version
