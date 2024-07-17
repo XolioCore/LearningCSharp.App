@@ -153,3 +153,32 @@ Console.WriteLine($"Second: {value++}");
 Console.WriteLine("Third: " + value);
 Console.WriteLine("Fourth: " + (++value));
 ```
+
+## Decision Logic
+Developers refer to the code that implements different execution paths as code branches.
+
+### If Statement
+
+- The most widely used code branching statement is the if statement.
+- The if statement relies on a Boolean expression that is enclosed in a set of parentheses.
+- If the expression is true, the code after the if statement is executed. If not, the .NET runtime ignores the code and doesn't execute it.
+
+```cs
+if (total > 14)
+{
+    Console.WriteLine("You win!");
+}
+```
+
+### What is a Boolean expression?
+A Boolean expression is any code that returns a Boolean value, either true or false. 
+Other simple Boolean expressions can be created by using operators to compare two values. Operators include:
+
+- ==, the "equals" operator, to test for equality
+- >, the "greater than" operator, to test that the value on the left is greater than the value on the right
+- <, the "less than" operator, to test that the value on the left is less than the value on the right
+- >=, the "greater than or equal to" operator
+- <=, the "less than or equal to" operator
+
+### What is a code block?
+A code block is a collection of one or more lines of code that are defined by an opening and closing curly brace symbol { }.
