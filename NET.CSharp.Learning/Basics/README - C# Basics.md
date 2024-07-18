@@ -162,6 +162,11 @@ Developers refer to the code that implements different execution paths as code b
 - The most widely used code branching statement is the if statement.
 - The if statement relies on a Boolean expression that is enclosed in a set of parentheses.
 - If the expression is true, the code after the if statement is executed. If not, the .NET runtime ignores the code and doesn't execute it.
+- The combination of if and else statements allows you to test for one condition, and then perform one of two outcomes.
+- The code block for the if will be run when the Boolean expression is true, and the code block for the else will be run when the Boolean expression is false.
+- You can nest if statements to narrow down a possible condition. However, you should consider using the if, else if, and else statements instead.
+- Use else if statements to create multiple exclusive conditions.
+- An else is optional, but it must always come last when included.
 
 ```cs
 if (total > 14)
