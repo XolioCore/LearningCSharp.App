@@ -229,3 +229,12 @@ Console.WriteLine(pangram.Contains("fox") == false);
 Console.WriteLine(!pangram.Contains("fox"));
 ```
 
+### What is the conditional operator?
+- The conditional operator ?: evaluates a Boolean expression and returns one of two results depending on whether the Boolean expression evaluates to true or false.
+- The conditional operator is commonly referred to as the **ternary conditional operator**.
+- You can use the conditional operator to reduce the size of your code, but you should ensure that the resulting code is easily readable.
+- You can use the conditional operator when you need to return a value that's based on a binary condition. Your code will return the first option when the condition evaluates to true, and it will return the second option when the condition evaluates to false.
+
+```cs
+<evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
+```
