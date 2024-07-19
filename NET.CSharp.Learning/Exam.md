@@ -128,3 +128,31 @@ When updates are made, the developers leave all existing code comments intact. N
 
 When updates are made, the developers summarize changes using block comments.
 Correct! Using a block comment to summarize the changes implemented during an update is a good use of code comments. A single block comment at the top of the files that contain updates is often sufficient.
+
+1. Which of the following is a list of valid comparison operators? 
+
+==, ~=, >, <, >=, and <=.
+
+==, <>, >, <, >=, and <=.
+
+==, !=, >, <, >=, and <=.
+That's correct. ==, !=, >, <, >=, and <= are all valid comparison operators.
+
+2. Which of the following code lines uses logical negation? 
+
+Console.WriteLine(myValue!= true);.
+
+Console.WriteLine(!myValue);.
+Correct! Adding the ! operator before a conditional expression is the correct way to implement logical negation.
+
+
+Console.WriteLine(myValue == false);.
+3. An application contains two string variables named myValue1 and myValue2. The user enters the following two values for these variables: "Y " and " y". Which of the following expressions return false? 
+
+(myValue1!= myValue2).
+
+(myValue1.Trim().ToLower() != myValue2.Trim().ToLower()).
+Correct! This expression returns false since the two values are equal and the inequality operator is being used.
+
+
+(myValue1.Trim().ToLower() == myValue2.Trim().ToLower()).
