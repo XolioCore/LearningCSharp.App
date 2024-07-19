@@ -146,4 +146,39 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
    }
    Console.WriteLine($"We have {sum} items in inventory.");
 ```
+## Variables
 
+### Variable name rules
+There are some variable naming rules that are enforced by the C# compiler.
+
+- Variable names can contain alphanumeric characters and the underscore (_) character. Special characters like the pound #, the dash -, and the dollar sign $ are not allowed.
+- Variable names must begin with an alphabetical letter or an underscore, not a number. Using an underscore character to start a variable name is typically reserved for private instance fields.
+- Variable names must NOT be a C# keyword. For example, these variable name declarations won't be allowed: float float; or string string;.
+- Variable names are case-sensitive, meaning that string MyValue; and string myValue; are two different variables.
+
+### Variable name conventions
+
+- Variable names should use camel case, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word. For example: string thisIsCamelCase;.
+- Variable names should be descriptive and meaningful in your application. 
+- Variable names should be one or more entire words appended together. 
+- Variable names shouldn't include the data type of the variable.
+
+## Comments
+
+- Use code comments to leave meaningful notes to yourself about the problem your code solves.
+- Don't use code comments that explain how C# or the .NET Class Library works.
+- Use code comments when temporarily trying alternative solutions until you're ready to commit to the new code solution, at which point you can delete the old code.
+- Never trust comments. They may not reflect the current state of the code after many changes and updates.
+
+```cs
+
+// Loop through each blank orderID
+
+/*
+  The following code creates five random OrderIDs
+  to test the fraud detection process.  OrderIDs 
+  consist of a letter from A to E, and a three
+  digit number. Ex. A123.
+*/
+
+```
