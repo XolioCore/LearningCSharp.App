@@ -182,3 +182,50 @@ There are some variable naming rules that are enforced by the C# compiler.
 */
 
 ```
+
+## Decision Logic
+
+Decision logic is used to establish alternative pathways through your code, where the decision about which path to follow is based on the evaluation of an expression.
+
+### What is an expression?
+An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements are comprised of one or more expressions.
+```cs
+if (myName == "Luiz")
+
+Console.WriteLine("a" == "a");
+Console.WriteLine("a" == "A");
+Console.WriteLine(1 == 2);
+
+string myValue = "a";
+Console.WriteLine(myValue == "a");
+```
+
+### Evaluating equality and inequality
+- When checking for equality, you'll locate the equality operator == between the two values being checked. If the values on either side of the equality operator are equivalent, then the expression will return true. Otherwise, it will return false.
+- To check for inequality, you'll use the inequality operator != between the two values.
+
+### Evaluating comparisons
+When working with numeric data types, you might want to determine if a value is larger or smaller than another value. Use the following operators to perform these types of comparisons:
+
+- Equal ==
+- Inequal !=
+- Greater than >
+- Less than <
+- Greater than or equal to >=
+- Less than or equal to <=
+
+### What is logical negation?
+- The term "Logical Negation" refers to the unary negation operator !.
+- Some people call this operator the "not operator".
+- When you place the ! operator before a conditional expression (or any code that's evaluated to either true or false), it forces your code to reverse its evaluation of the operand.
+- When logical negation is applied, the evaluation produces true , if the operand evaluates to false , and false , if the operand evaluates to true.
+- Use the logical negation operator ! to evaluate the opposite of a given expression.
+- Evaluating equality of strings requires you to consider the possibility that the strings have different case and leading or trailing spaces. Depending on your situation, use the ToLower() or ToUpper() helper methods, and the Trim() helper method to improve the likelihood that two strings are equal.
+
+```cs
+// These two lines of code will create the same output
+
+Console.WriteLine(pangram.Contains("fox") == false);
+Console.WriteLine(!pangram.Contains("fox"));
+```
+
