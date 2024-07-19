@@ -91,3 +91,59 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 - IntelliSense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their parameters.
 - learn.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.
 
+## Array
+- C# arrays allow you to store sequences of values in a single data structure.
+- Arrays can be used to store multiple values of the same type in a single variable.
+- In other words, imagine a single variable that can hold many values. Once you have a single variable that stores all the values, you can sort the values, reverse the order of the values, loop through each value and inspect it individually, and so on.
+- An array is a sequence of individual data elements accessible through a single variable name.
+- You use a zero-based numeric index to access each element of an array.
+
+### Declaring arrays
+
+```cs
+   string[] orderIDs = new string[3];
+
+   orderIDs[0] = "A123";
+   orderIDs[1] = "B456";
+   orderIDs[2] = "C789";
+   // orderIDs[3] = "D000";
+
+   Console.WriteLine($"First: {orderIDs[0]}");
+   Console.WriteLine($"Second: {orderIDs[1]}");
+   Console.WriteLine($"Third: {orderIDs[2]}");
+
+   orderIDs[0] = "F000";
+
+   Console.WriteLine($"Reassign First: {orderIDs[0]}");
+```
+### Initialize an array
+
+```c
+   string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+```
+### Lenght of an array
+```cs
+   string[] orderIDs = { "A001", "B002", "C003" };
+
+   Console.WriteLine($"Lenght: {orderIDs.Length}");
+```
+
+### Looping arrays
+
+- Use the foreach statement to iterate through each element in an array, executing the associated code block once for each element in the array.
+- The foreach statement sets the value of the current element in the array to a temporary variable, which you can use in the body of the code block.
+- Use the ++ increment operator to add 1 to the current value of a variable.
+
+```cs
+   int[] inventory = { 200, 450, 700, 175, 250 };
+   int sum = 0;
+   int bin = 0;
+   foreach (int items in inventory)
+   {
+       sum += items;
+       bin++;
+       Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
+   }
+   Console.WriteLine($"We have {sum} items in inventory.");
+```
+
