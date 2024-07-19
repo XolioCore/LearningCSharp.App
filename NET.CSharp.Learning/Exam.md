@@ -156,3 +156,13 @@ Correct! This expression returns false since the two values are equal and the in
 
 
 (myValue1.Trim().ToLower() == myValue2.Trim().ToLower()).
+
+1. Which of the following lines of code is a valid use of the conditional operator? 
+
+int bonus = amount >= 100? 10: 5;.
+Correct! This code line shows the correct syntax for a conditional operator ?:.
+
+
+int bonus = amount >= 100: 10? 5;.
+
+int bonus = amount >= 100? 10, 5;.
