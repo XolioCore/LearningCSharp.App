@@ -273,3 +273,54 @@ When implementing an if statement that includes a single-statement code block, M
 - Microsoft recommends that curly braces be used consistently for all of the code blocks of an if-elseif-else statement (either present or removed consistently).
 - Only remove the curly braces of a code block when it makes the code more readable. It's always acceptable to include curly braces.
 - Only remove the line feed if it makes the code more readable. Microsoft suggests that your code will be more readable when each statement is placed on its own code line.
+
+## Switch statement
+- A switch statement is a C# selection statement that provides an alternative to an if-elseif-else branching construct.
+- The switch statement provides advantages over an if-elseif-else construct when evaluating a single value against a list of known matching values.
+- The selected switch section is chosen based on a pattern match with the statement's match expression.
+- Use the switch statement when you have one value with many possible matches, each match requiring a branch in your code logic.
+- A single switch section containing code logic can be matched using one or more labels defined by the case keyword.
+- Use the optional default keyword to create a label and a switch section that will be used when no other case labels match.
+
+```cs
+switch (fruit)
+{
+    case "apple":
+        Console.WriteLine($"App will display information for apple.");
+        break;
+
+    case "banana":
+        Console.WriteLine($"App will display information for banana.");
+        break;
+
+    case "cherry":
+        Console.WriteLine($"App will display information for cherry.");
+        break;
+}
+```
+
+## for iteration loops
+
+- The for statement iterates through a code block a specific number of times.
+- This level of control makes the for statement unique among the other iteration statements.
+
+The for statement includes the following six parts:
+
+- The for keyword.
+- A set of parentheses that defines the conditions of for iteration. The parentheses contain three distinct parts, separated by the end of statement operator, a semi-colon.
+- The first part defines and initializes the iterator variable. In this example: int i = 0. This section is referred to as the initializer.
+- The second part defines the completion condition. In this example: i < 10. In other words, the runtime will continue to iterate over the code in the code block below the for statement while i is less than 10. When i becomes equal to 10, the runtime stops executing the for statement's code block. The docs refer to this section as the condition.
+- The third part defines the action to take after each iteration. In this case, after each iteration, i++ will increment the value of i by 1. The docs refer to this section as the iterator.
+- Finally, the code block. The code block contains the code that will be executed for each iteration. Notice that the value of i is referenced inside of the code block. The docs refer to this section as the body.
+- The for iteration statement allows you to iterate through a block of code a specific number of times.
+- The for iteration statement allows you to control every aspect of the iteration's mechanics by altering the three conditions inside the parentheses: the initializer, condition, and iterator.
+- It's common to use the for statement when you need to control how you want to iterate through each item in an array.
+- If your code block has only one line of code, you can eliminate the curly braces and white space if you wish.
+
+```cs
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+```
+
