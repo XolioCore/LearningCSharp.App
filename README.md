@@ -238,3 +238,38 @@ Console.WriteLine(!pangram.Contains("fox"));
 ```cs
 <evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
 ```
+
+## Code blocks and variable scope
+- When you declare a variable inside a code block, its visibility is local to that code block and that variable cannot be accessed outside of the code block.
+- To ensure that a variable is visible both inside and outside of a code block, you must declare the variable prior to the code block (outside and above the code block).
+- Ensure that variables are initialized before your code attempts to access them (for all potential code execution paths).
+
+### Code Block
+- A code block is one or more C# statements that define an execution path.
+- The statements outside of a code block affect when, if, and how often that block of code is executed at run time.
+- The boundaries of a code block are typically defined by squiggly braces, {}.
+
+### Variable scope 
+- Refers to a variable's visibility to the other code in your application.
+- A locally scoped variable is only accessible inside of the code block in which it's defined.
+- If you attempt to access the variable outside of the code block, you'll get a compiler error.
+
+```cs
+bool flag = true;
+if (flag)
+{
+    int value = 10;
+    Console.WriteLine($"Inside the code block: {value}");
+}
+Console.WriteLine($"Outside the code block: {value}");
+```
+
+## Readability of single-line form if statements
+When implementing an if statement that includes a single-statement code block, Microsoft recommends that you consider these conventions:
+- Never use single-line form (for example: if (flag) Console.WriteLine(flag);
+- Using braces is always accepted, and required if any block of an if/else if/.../else compound statement uses braces or if a single statement body spans multiple lines.
+- Braces may be omitted only if the body of every block associated with an if/else if/.../else compound statement is placed on a single line.
+- If you realize you have only one line of code listed within the code blocks of an if-elseif-else statement, you can remove the curly braces of the code block and white space.
+- Microsoft recommends that curly braces be used consistently for all of the code blocks of an if-elseif-else statement (either present or removed consistently).
+- Only remove the curly braces of a code block when it makes the code more readable. It's always acceptable to include curly braces.
+- Only remove the line feed if it makes the code more readable. Microsoft suggests that your code will be more readable when each statement is placed on its own code line.
