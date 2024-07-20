@@ -163,6 +163,63 @@ int bonus = amount >= 100? 10: 5;.
 Correct! This code line shows the correct syntax for a conditional operator ?:.
 
 
+1. Which line of code uses logical negation? 
+
+Console.WriteLine(!value);.
+Correct! Adding the ! operator (the "not-operator") before a conditional expression forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces true if the operand evaluates to false and false if the operand evaluates to true.
+
+
+Console.WriteLine(value != false);.
+
+Console.WriteLine(a != b);.
+2. Which of the following lines of code is a valid use of the conditional operator? 
+
+int value = amount >= 10? 10: 20;.
+Correct! The syntax for a conditional operator is "? (value 1) : (value 2)".
+
+
+int value = amount >= 10: 10? 20;.
+
+int value = amount >= 10? 10| 20;.
+
 int bonus = amount >= 100: 10? 5;.
 
 int bonus = amount >= 100? 10, 5;.
+
+1. A developer writes some code that includes an if statement code block. They initialize one integer variable to a value of 5 above (outside) of the code block. They initialize a second integer variable to a value of 6 on the first line inside of the code block. The Boolean expression for the code block evaluates to true if the first integer variable has a value greater than 0. On the second line inside the code block, they assign the sum of the two values to the first variable. On the first line after the code block, they write code to display the value of the first integer. What is the result when the code statement used to display the first integer is executed? 
+
+No error is generated and the integer value is displayed. The value displayed is the sum of the first and second integer.
+Correct! Since the first integer is initialized above the if statement code, it's still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer doesn't exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block.
+
+
+No error is generated and the integer value is displayed. The value displayed is the initialized value from above the code block.
+
+An error is generated because the first variable isn't in-scope after the code block.
+
+
+1. Which of the following statements is true about showing/removing the curly braces for code blocks associated with an if statement? 
+
+The curly braces can't be removed from the code block for else if and else statements.
+
+If the curly braces are removed from the code blocks of an if-elseif-else, the white space must also be removed.
+
+Always choose a style that improves readability.
+Correct! Code readability should always be a consideration when deciding whether to remove the curly braces from the code blocks associated with an if statement.
+
+2. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 1 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 8. The second code line inside the code block is used to assign the sum of the two integer values to the first variable. The first code line after the code block is used to display the value of the first integer variable. What is the result when the code is executed? 
+
+No error is generated and the integer value 9 is displayed.
+Correct! Since the first integer is initialized above the if statement code, it's still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer doesn't exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block.
+
+
+No error is generated and the integer value 1 is displayed.
+
+An error is generated because the first variable is not in-scope after the code block.
+3. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 5 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 6. The first code line after the code block is used to add the second integer value to the value of the first integer. The second code line after the code block is used to display the value of the first integer. What is the result when they run the code? 
+
+No error is generated and the integer value 11 is displayed.
+
+An error is generated by the code line used to display the integer value.
+
+A build error is generated by the code line used to sum the two integers.
+Correct! A build error is generated by the code that sums the two integers. The error tells you that the second variable does not exist in the current context. The second variable is not in-scope outside the code block.
