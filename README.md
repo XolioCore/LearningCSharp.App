@@ -299,7 +299,7 @@ switch (fruit)
 }
 ```
 
-## for iteration loops
+## for Iteration Loops
 
 - The for statement iterates through a code block a specific number of times.
 - This level of control makes the for statement unique among the other iteration statements.
@@ -323,4 +323,30 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(i);
 }
 ```
+
+## do-while and while statements
+
+### What is the do-while statement?
+- The do-while statement executes a statement or a block of statements while a specified Boolean expression evaluates to true.
+- Because that expression is evaluated after each execution of the loop, a do-while loop executes one or more times.
+
+```cs Sintaxis
+do
+{
+    // This code executes at least one time
+} while (true);
+```
+- The flow of execution starts inside of the curly brace. The code executes at least one time, then the Boolean expression next to the while keyword is evaluated. If the Boolean expression returns true, the code block is executed again.
+
+- The do-while statement iterates through a code block at least once, and might continue to iterate based on a Boolean expression. The evaluation of the Boolean expression usually depends on some value generated or retrieved inside of the code block.
+- The while statement evaluates a Boolean expression first, and continues to iterate through the code block as long as the Boolean expression evaluates to true.
+- The continue keyword to step immediately to the Boolean expression.
+
+
+## Loops differences
+
+- The for statement: executes its body while a specified Boolean expression (the 'condition') evaluates to true.
+- The foreach statement: enumerates the elements of a collection and executes its body for each element of the collection.
+- The do-while statement: conditionally executes its body one or more times.
+- The while statement: conditionally executes its body zero or more times.
 
