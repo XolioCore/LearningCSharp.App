@@ -719,12 +719,13 @@ Correct! Methods are called using the name, followed by parentheses () and a sem
 void GenerateID() {}
 
 GenerateID;
-3. Which of the following is true about the return keyword? 
+
+### 3. Which of the following is true about the return keyword? 
 
 It's identical to the break keyword.
 
-It terminates the execution of a method.
-Correct! The return statement terminates execution of its method and returns control to the caller.
+``It terminates the execution of a method.```
 
+**Correct!** The return statement terminates execution of its method and returns control to the caller.
 
 It must always be used with a value or expression.
