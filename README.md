@@ -426,3 +426,23 @@ float  : -3.402823E+38 to 3.402823E+38 (with ~6-9 digits of precision)
 double : -1.79769313486232E+308 to 1.79769313486232E+308 (with ~15-17 digits of precision)
 decimal: -79228162514264337593543950335 to 79228162514264337593543950335 (with 28-29 digits of precision)
 ```
+
+## Reference types vs Value types
+
+### Value Type
+- A **value type** variable stores its values directly in an area of storage called the **stack**. 
+- The **stack** is memory allocated to the code that is currently running on the CPU (also known as the stack frame, or activation frame). 
+- When the stack frame has finished executing, the values in the stack are removed.
+- Value types can hold smaller values and are stored in the stack. 
+
+### Reference Type
+- A **reference type** variable stores its values in a separate memory region called the heap. 
+- The heap is a memory area that is shared across many applications running on the operating system at the same time.
+- The .NET Runtime communicates with the operating system to determine what memory addresses are available, and requests an address where it can store the value.
+- The .NET Runtime stores the value, and then returns the memory address to the variable. When your code uses the variable, the .NET Runtime seamlessly looks up the address stored in the variable, and retrieves the value that's stored there.
+- The string data type is also a reference type.
+- Reference types can hold large values, and a new instance of a reference type is created using the new operator.
+- Reference type variables hold a reference (the memory address) to the actual value stored in the heap.
+- Reference types include arrays, strings, and classes.
+
+
