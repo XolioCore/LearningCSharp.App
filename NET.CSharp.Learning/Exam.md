@@ -671,3 +671,54 @@ A string representing numeric digits.
 A Boolean value.
 
 A decimal
+
+////
+1. Suppose there's a method named ConvertCurrency. Which of the following lines of code is a valid method signature? 
+
+ConvertCurrency();
+
+ConvertCurrency() { }
+This answer is incorrect. A return type must be declared before the method name.
+
+
+void ConvertCurrency(){};
+This line is correct. A method signature is created by declaring the return type, followed by the method name, and parentheses containing any input parameters.
+
+2. Suppose there's a method named Update. Which of the following correctly calls the method? 
+
+var update;
+
+Update();
+This answer is correct! A method is called using its name followed by parentheses.
+
+
+void Update();
+
+////
+1. Which of the following correctly declares a method? 
+
+DisplayNumbers();
+
+void DisplayNumbers{};
+
+void DisplayNumbers() { }
+Correct. A method is declared using the return type, followed by parentheses () containing any parameters, and brackets {} to contain the method body.
+
+2. Which of the following correctly calls a method? 
+
+GenerateID();
+Correct! Methods are called using the name, followed by parentheses () and a semicolon.
+
+
+void GenerateID() {}
+
+GenerateID;
+3. Which of the following is true about the return keyword? 
+
+It's identical to the break keyword.
+
+It terminates the execution of a method.
+Correct! The return statement terminates execution of its method and returns control to the caller.
+
+
+It must always be used with a value or expression.
