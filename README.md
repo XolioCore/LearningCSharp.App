@@ -781,4 +781,31 @@ Correct. A for is better when index ranges that aren't the first to the last ind
 void ShowData(string a, int b, int c);
 void DisplayDate(string month, int day, int year);
 ```
+### Use Parameters
+- Information consumed by a method is called a parameter.
+- The terms 'parameter' and 'argument' are often used interchangeably. However, 'parameter' refers to the variable in the method signature.
+- The 'argument' is the value passed when the method is called.
+- Parameters in a method work similar to variables.
+- A parameter is defined by specifying the data type followed by the name of the parameter.
+- Parameters are declared in the method signature, and the values for the parameters are provided by the method caller instead of being initialized inside the method itself.
+- Multiple parameters are separated by commas.
+- Methods can accept variable or literal arguments.
+
+```cs
+void CountTo(int max) 
+	{
+		for (int i = 0; i < max; i++)
+		{
+			Console.Write($"{i}, ");
+		}
+	}
+```
+
+### Variable scope
+- Variables declared inside of a method are only accessible to that method.
+- Variables declared in top-level statements are accessible throughout the program.
+- Methods don't have access to variables defined within different methods.
+- Methods can call other methods.
+
+
 
