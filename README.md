@@ -445,4 +445,91 @@ decimal: -79228162514264337593543950335 to 79228162514264337593543950335 (with 2
 - Reference type variables hold a reference (the memory address) to the actual value stored in the heap.
 - Reference types include arrays, strings, and classes.
 
+## Choosing correct data type
 
+- int for most whole numbers
+- decimal for numbers representing money
+- bool for true or false values
+- string for alphanumeric value
+- byte: working with encoded data that comes from other computer systems or using different character sets.
+- double: working with geometric or scientific purposes. double is used frequently when building games involving motion.
+- System.DateTime for a specific date and time value.
+- System.TimeSpan for a span of years / months / days / hours / minutes / seconds / milliseconds.
+
+## Convert data
+
+- Use a helper method on the data type
+- Use a helper method on the variable
+- Use the Convert class' methods
+- Prevent a runtime error while performing a data conversion
+- Perform an explicit cast to tell the compiler you understand the risk of losing data
+- Rely on the compiler to perform an implicit cast when performing an expanding conversion
+- Use the () cast operator and the data type to perform a cast (for example, (int)myDecimal)
+- Use the Convert class when you want to perform a narrowing conversion, but want to perform rounding, not a truncation of information
+
+### Implicit Conversion
+
+#### Widening conversion
+- The term widening conversion means that you're attempting to convert a value from a data type that could hold less information to a data type that can hold more information.
+- In this case, a value stored in a variable of type int converted to a variable of type decimal, doesn't lose information.
+- When you know you're performing a widening conversion, you can rely on implicit conversion. The compiler handles implicit conversions.
+```cs
+int myInt = 3;
+decimal myDecimal = myInt;
+```
+
+#### Narrowing conversion
+- The term narrowing conversion means that you're attempting to convert a value from a data type that can hold more information to a data type that can hold less information. In this case, you may lose information such as precision (that is, the number of values after the decimal point). An example is converting value stored in a variable of type decimal into a variable of type int.
+
+
+### Explicit Conversion
+- To perform a cast, you use the casting operator () to surround a data type, then place it next to the variable you want to convert (example: (int)myDecimal).
+- You perform an explicit conversion to the defined cast data type (int).
+
+```cs
+int myInt = (int)myDecimal;
+```
+
+### Performing Data Conversions
+
+#### Number to String
+- Use ToString() to convert a number to a string
+- Every data type variable has a ToString() method. 
+
+```cs
+int first = 5;
+int second = 7;
+string message = first.ToString() + second.ToString();
+```
+
+#### String to Number
+- Convert a string to an int using the Parse() helper method
+- Most of the numeric data types have a Parse() method, which converts a string into the given data type.
+
+```cs
+string first = "5";
+string second = "7";
+int sum = int.Parse(first) + int.Parse(second);
+```
+
+#### Convert using the Convert class
+The Convert class has many helper methods to convert a value from one type into another. 
+
+```cs
+string value1 = "5";
+string value2 = "7";
+int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
+```
+
+#### Compare casting and converting 
+
+- When you're casting int value = (int)1.5m;, the value of the float is truncated so the result is 1, meaning the value after the decimal is ignored completely. You could change the literal float to 1.999m and the result of casting would be the same.
+- When you're converting using Convert.ToInt32(), the literal float value is properly rounded up to 2. If you changed the literal value to 1.499m, it would be rounded down to 1.
+
+```cs
+int value = (int)1.5m; // casting truncates
+Console.WriteLine(value);
+
+int value2 = Convert.ToInt32(1.5m); // converting rounds up
+Console.WriteLine(value2);
+```
