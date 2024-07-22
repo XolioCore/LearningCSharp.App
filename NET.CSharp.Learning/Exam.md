@@ -357,7 +357,61 @@ Correct! When their code is processing the contents of a multidimensional array,
 It ensures that a variable that's declared outside of a code block, can be accessed inside the code block before it's been assigned a value.
 
 It ensures that application resources and the security footprint are kept small.
+
+
 Correct. Keeping variables scoped at the lowest necessary level enables better resource management and helps to minimize the attack profile of the application.
 
 
 It ensures that a variable can be accessed within the lowest level code branches of an application.
+
+
+
+1. A developer is writing an application in Visual Studio Code. They save changes to their Program.cs file, and then run the dotnet build command in the Terminal panel. What information can they find in reported Error and Warning messages? 
+
+One or more suggestions for how to fix any syntax issues detected.
+
+The line number and information about what caused the error.
+Correct. Error and Warning messages include a description of the issue and the line number where it occurs.
+
+
+Links to help documentation.
+2. A developer needs to create an iteration statement. Under what condition is a while statement a better choice than a do statement? 
+
+When the expression values evaluated by the iteration statement are unknown prior to the iteration code block.
+
+When the expression values evaluated by the iteration statement are known prior to the iteration code block.
+Correct. When the code is able to evaluate the loop expression prior to the loop, a while statement allows the code to implement zero iterations.
+
+
+When the developer creates nested do or while loops.
+
+
+1. Which choice best represents how bits represent on and off? 
+
+Bits are represented using "x" or "o" character.
+
+Bits are represented using "+bit" or "-bit" notation.
+
+Bits are binary and represented using "1" or "0" digit.
+Correct. Bits are represented using the "1" or "0" digit.
+
+
+1. Which data type has a range of whole numbers between 0 and 65535 in C# code? 
+
+Sbyte
+
+Ushort
+Correct, ushort represents values 0 to 65535.
+
+
+byte
+
+1. Which is the best data type to use to process banking deposits? 
+
+Decimal
+Correct. Decimal, with ~28-29 digits of precision, has the precision required for many financial applications.
+
+
+Float
+
+Double
