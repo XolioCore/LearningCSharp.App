@@ -350,3 +350,79 @@ do
 - The do-while statement: conditionally executes its body one or more times.
 - The while statement: conditionally executes its body zero or more times.
 
+
+## Data types
+
+A data type is a way a programming language defines how much memory to save for a value. There are many data types in the C# language to be used for many different applications and sizes of data.
+
+- Values are stored as bits, which are simple on / off switches. Combining enough of these switches allows you to store just about any possible value.
+- There are two basic categories of data types: value and reference types. The difference is in how and where the values are stored by the computer as your program executes.
+- Simple value types use a keyword alias to represent formal names of types in the .NET Library.
+- Variables of reference types store references to their data (objects), that is they point to data values stored somewhere else. In comparison, variables of value types directly contain their data.
+
+### Integral Type
+
+- An integral type is a simple value type that represents whole numbers with no fraction (such as -1, 0, 1, 2, 3). The most popular in this category is the int data type.
+- There are signed and unsigned numeric data types. Signed integral types use 1 bit to store whether the value is positive or negative.
+- You can use the MaxValue and MinValue properties of numeric data types to evaluate whether a number can fit in a given data type.
+
+
+#### Signed Integral Types
+- A signed type uses its bytes to represent an equal number of positive and negative numbers.
+```cs
+Console.WriteLine("Signed integral types:");
+
+Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
+Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
+Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
+Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
+```
+
+```
+Signed integral types:
+sbyte  : -128 to 127
+short  : -32768 to 32767
+int    : -2147483648 to 2147483647
+long   : -9223372036854775808 to 9223372036854775807
+```
+
+#### Unsigned Integral Types
+
+An unsigned type uses its bytes to represent only positive numbers. The remainder of the exercise introduces the unsigned integral types in C#.
+```cs
+Console.WriteLine("");
+Console.WriteLine("Unsigned integral types:");
+
+Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
+Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
+Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
+Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
+```
+```
+Unsigned integral types:
+byte   : 0 to 255
+ushort : 0 to 65535
+uint   : 0 to 4294967295
+ulong  : 0 to 18446744073709551615
+```
+
+### Floating Point types
+- A floating point is a simple value type that represents numbers to the right of the decimal place. 
+- You must consider the digits of precision each type allows. Precision is the number of value places stored after the decimal point.
+- **float** and **double** values are stored internally in a binary (base 2) format, while **decimal** is stored in a decimal (base 10) format.
+- Floating-point values can sometimes be represented using "E notation" when the numbers grow especially large.
+
+```cs
+Console.WriteLine("");
+Console.WriteLine("Floating point types:");
+Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
+Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
+Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
+```
+
+```
+Floating point types:
+float  : -3.402823E+38 to 3.402823E+38 (with ~6-9 digits of precision)
+double : -1.79769313486232E+308 to 1.79769313486232E+308 (with ~15-17 digits of precision)
+decimal: -79228162514264337593543950335 to 79228162514264337593543950335 (with 28-29 digits of precision)
+```
