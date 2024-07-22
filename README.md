@@ -766,12 +766,19 @@ To evaluate a specific range of elements.
 Correct. A for is better when index ranges that aren't the first to the last index are required.
 
 ## Methods
-
+- Create a method by declaring the return type, name, input parameters, and method body.
+- Method names should clearly reflect the task the method performs.
+- Use a method by calling its name and including parentheses ().
 - When choosing a method name, it's important to keep the name concise and make it clear what task the method performs. 
 - Method names should be Pascal case and generally shouldn't start with digits.
 - Names for parameters should describe what kind of information the parameter represents. Consider the following method signatures:
+- Methods can be used to quickly structure applications
+- The return keyword can be used to terminate method execution
+- Each step of a problem can often be translated into its own method
+- Use methods to solve small problems to build up your solution
 
 ```cs
 void ShowData(string a, int b, int c);
 void DisplayDate(string month, int day, int year);
 ```
+
