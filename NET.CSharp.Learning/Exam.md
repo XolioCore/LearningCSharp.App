@@ -610,3 +610,64 @@ Correct. The $ directive is used to perform string interpolation.
 @
 
 %
+
+
+1. What is the return value of myString.IndexOf('C'); where string myString = "C# Time";? 
+
+0
+Correct. "C" is the first item in myString and matches at position 0.
+
+
+1
+
+-1
+
+1. What method should be used to search for the first occurrence of a search term in a long string? 
+
+IndexOfAny()
+Correct. IndexOfAny() returns the first position of an array of char that occurs inside of another string.
+
+
+1. If the code message = message.Replace("B", "D"); is run, where string message = "Big Dog";, what is the new value of message? 
+
+"Big Dog"
+
+"Big Bog"
+
+"Dig Dog"
+Correct. "B" is replaced with "D".
+
+////
+1. Which method finds the next index of either the - char, the = char, or the _ char? 
+
+IndexOfAny()
+Correct. Use IndexOfAny() to retrieve the next index for any of several chars in a string.
+
+
+Remove()
+
+IndexOf()
+2. What is a constant variable? 
+
+A magic string or number.
+
+A variable whose name must match its value.
+
+A value that once initialized can never be changed.
+Correct. A constant variable can never be changed, once initialized.
+
+////
+1. Which choice best describes the purpose of TryParse()? 
+
+To split sentences into words stored in an array.
+
+To safely test a cast operation.
+
+To find a substring in a larger string.
+2. For the code decimal.TryParse(numberString, out myConvert)) when the type of numberString is a String. Which best describes the value type for myConvert when the TryParse() is successful? 
+
+A string representing numeric digits.
+
+A Boolean value.
+
+A decimal
