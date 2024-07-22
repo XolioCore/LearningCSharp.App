@@ -675,7 +675,7 @@ decimal tax = .36785m;
 Console.WriteLine($"Tax rate: {tax:P2}");
 ```
 
-### String Methods
+## String Methods
 
 - Methods that add blank spaces for formatting purposes (PadLeft(), PadRight())
 - Methods that compare two strings or facilitate comparison (Trim(), TrimStart(), TrimEnd(), GetHashcode(), the Length property)
@@ -683,3 +683,95 @@ Console.WriteLine($"Tax rate: {tax:P2}");
 - Methods that change the content of the string by replacing, inserting, or removing parts (Replace(), Insert(), Remove())
 - Methods that turn a string into an array of strings or characters (Split(), ToCharArray())
 
+### String.IndexOf()
+- You use the IndexOf() method to locate the position of one or more characters string inside a larger string. 
+- IndexOf() gives you the first position of a character or string inside of another string.
+- IndexOf() returns -1 if it can't find a match
+- IndexOfAny() returns the first position of an array of char that occurs inside of another string.
+  
+```cs
+string message = "Find what is (inside the parentheses)";
+
+int openingPosition = message.IndexOf('(');
+int closingPosition = message.IndexOf(')');
+```
+
+### String.Substring()
+- You use the Substring() method to return the part of the larger string that follows the character positions you specify.
+- Substring() returns just the specified portion of a string, using a starting position and optional length.
+  
+```cs
+string message = "Find what is (inside the parentheses)";
+
+int openingPosition = message.IndexOf('(');
+int closingPosition = message.IndexOf(')');
+
+openingPosition += 1;
+
+int length = closingPosition - openingPosition;
+Console.WriteLine(message.Substring(openingPosition, length));
+```
+
+### String.LastIndexOf()
+- You also use LastIndexOf() to find the final location of a string within another string.
+- LastIndexOf() returns the last position of a character or string inside of another string.
+
+
+```cs
+string message = "(What if) I am (only interested) in the last (set of parentheses)?";
+int openingPosition = message.LastIndexOf('(');
+
+openingPosition += 1;
+int closingPosition = message.LastIndexOf(')');
+int length = closingPosition - openingPosition;
+Console.WriteLine(message.Substring(openingPosition, length));
+```
+### String.Remove()
+- You would typically use Remove() when there's a standard and consistent position of the characters you want to remove from the string.
+- The Remove() method works like the Substring() method, except that it deletes the specified characters in the string.
+
+```cs
+string data = "12345John Smith          5000  3  ";
+string updatedData = data.Remove(5, 20);
+```
+
+### String.Replace
+- The Replace() method is used when you need to replace one or more characters with a different character (or no character). 
+- The Replace() method is different from the other methods used so far, it replaces every instance of the given characters, not just the first or last instance.
+- The Replace() method swaps all instances of a string with a new string.
+
+```cs
+string message = "This--is--ex-amp-le--da-ta";
+message = message.Replace("--", " ");
+message = message.Replace("-", "");
+```
+
+////
+1. To sort a string array, why is it important to use the String.Trim() method on each array element before sorting? 
+
+Only string arrays with elements trimmed with String.Trim() can sort.
+
+String.Trim() removes leading white space that would sort before numbers and letters.
+Correct. String.Trim() removes both leading and trailing whitespace.
+
+
+The array sort is noticeably faster using String.Trim() on each element.
+2. Both foreach and for are good choices to iterate small single dimension arrays like {"cat", "fox", "dog", "snake", "eagle"}, but when is it best to use a for loop? 
+
+When the elements have alphabetical sort order.
+
+To perform a search on each element in the array.
+
+To evaluate a specific range of elements.
+Correct. A for is better when index ranges that aren't the first to the last index are required.
+
+## Methods
+
+- When choosing a method name, it's important to keep the name concise and make it clear what task the method performs. 
+- Method names should be Pascal case and generally shouldn't start with digits.
+- Names for parameters should describe what kind of information the parameter represents. Consider the following method signatures:
+
+```cs
+void ShowData(string a, int b, int c);
+void DisplayDate(string month, int day, int year);
+```
