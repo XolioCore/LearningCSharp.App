@@ -415,3 +415,14 @@ Correct. Decimal, with ~28-29 digits of precision, has the precision required fo
 Float
 
 Double
+
+
+1. In C#, when the new keyword is used to create an instance of a class, where is the memory allocated? 
+
+Stack
+
+Heap
+Correct. Instances of classes are allocated on the heap when created with the new keyword.
+
+
+Variable
