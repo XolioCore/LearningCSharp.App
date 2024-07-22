@@ -572,3 +572,114 @@ string[] pallets = { "B14", "A11", "B12", "A13" };
 Array.Reverse(pallets);
 ```
 
+### Clear()
+- The Array.Clear() method allows you to remove the contents of specific elements in your array and replace it with the array default value.
+- For example, in a string array the element value cleared is replaced with null, when you clear a int array element the replacement is done with 0 (zero).
+
+```cs
+string[] pallets = { "B14", "A11", "B12", "A13" };
+Array.Clear(pallets, 0, 2);
+```
+
+### Resize()
+- The Array.Resize() allows you to add or remove elements to an Array.
+- When Add elements, the new elements are added at the end of the current elements. The two new elements will be null until you assign a value to them.
+
+```cs
+string[] pallets = { "B14", "A11", "B12", "A13" };
+Array.Resize(ref pallets, 6);
+```
+
+- When Remove elements, the removed elements are from the end.
+```cs
+string[] pallets = { "B14", "A11", "B12", "A13" };
+Array.Resize(ref pallets, 3);
+```
+### ToCharArray()
+-You use the ToCharArray() method to create an array of char, each element of the array has one character of the original string.
+```cs
+string value = "abc123";
+char[] valueArray = value.ToCharArray();
+```
+
+### Join()
+- Combine all of the chars into a new separated-value string.
+```cs
+string value = "abc123";
+char[] valueArray = value.ToCharArray();
+string result = String.Join(",", valueArray);
+Console.WriteLine(result);
+```
+
+### Split
+- You use the Split() method for variables of type string to create an array of strings.
+
+```cs
+string value = "This is an example, using split, from and string, separated by commas";
+string[] arrayValues = value.Split(',');
+foreach (var arrayValue in arrayValues)
+{
+    Console.WriteLine(arrayValue);
+}
+```
+
+## Composite Formatting
+- Composite formatting uses numbered placeholders within a string.
+- At run time, everything inside the braces is resolved to a value that is also passed in based on their position.
+
+```cs
+string first = "Hello";
+string second = "World";
+string result = string.Format("{0} {1}!", first, second);
+Console.WriteLine(result);
+```
+
+### string interpolation?
+- String interpolation is a technique that simplifies composite formatting.
+- Instead of using a numbered token and including the literal value or variable name in a list of arguments to String.Format() or Console.WriteLine(), you can just use the variable name inside of the curly braces.
+- In order for a string to be interpolated, you must prefix it with the $ directive.
+
+```cs
+string first = "Hello";
+string second = "World";
+Console.WriteLine($"{first} {second}!");
+Console.WriteLine($"{second} {first}!");
+Console.WriteLine($"{first} {first} {first}!");
+```
+
+### Formatting currency
+Composite formatting and string interpolation can be used to format values for display given a specific language and culture. 
+In the following example, the :C currency format specifier is used to present the price and discount variables as currency. Update your code as follows:
+```cs
+decimal price = 123.45m;
+int discount = 50;
+Console.WriteLine($"Price: {price:C} (Save {discount:C})");
+```
+
+### Formatting numbers
+When working with numeric data, you might want to format the number for readability by including commas to delineate thousands, millions, billions, and so on.
+Format numbers using a :N specifier. Control the precision (number of values after the decimal point) using a number after the :N like {myNumber:N3}.
+
+The N numeric format specifier makes numbers more readable. Update your code as follows:
+```cs
+decimal measurement = 123456.78912m;
+Console.WriteLine($"Measurement: {measurement:N} units");
+```
+
+### Formatting percentages
+Use the P format specifier to format percentages and rounds to 2 decimal places. Add a number afterwards to control the number of values displayed after the decimal point. Update your code as follows:
+Format percentages using the :P format specifier.
+
+```cs
+decimal tax = .36785m;
+Console.WriteLine($"Tax rate: {tax:P2}");
+```
+
+### String Methods
+
+- Methods that add blank spaces for formatting purposes (PadLeft(), PadRight())
+- Methods that compare two strings or facilitate comparison (Trim(), TrimStart(), TrimEnd(), GetHashcode(), the Length property)
+- Methods that help you determine what's inside of a string, or even retrieve just a part of the string (Contains(), StartsWith(), EndsWith(), Substring())
+- Methods that change the content of the string by replacing, inserting, or removing parts (Replace(), Insert(), Remove())
+- Methods that turn a string into an array of strings or characters (Split(), ToCharArray())
+
