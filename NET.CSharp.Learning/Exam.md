@@ -426,3 +426,187 @@ Correct. Instances of classes are allocated on the heap when created with the ne
 
 
 Variable
+
+
+1. A piece of code must store whole numeric values between negative and positive 1,000,000. Which is the best data type to be used? 
+
+float
+
+double
+
+int
+Correct. While float or double would work, their extra precision after the decimal doesn't fit the exact requirement of this scenario.
+
+2. The code for a game needs to store lots of fractional values representing x, y, and z positions in a large 3D space. It will likely need to perform physics calculations for trajectories and so on. Absolute precision isn't required, but it's important that the program runs as efficiently as possible. Which data type is best? 
+
+float
+Correct. Unlike int, float can store fractional numbers, and unlike decimal, float doesn't require extra memory to store extra precision that isn't needed in this scenario.
+
+
+decimal
+Incorrect. While decimal can store large fractional numbers, they require more memory to store all the precision. Furthermore, they're less efficient than float or double. Finally, they can return precise calculated values, but the question says that's not a priority in this situation.
+
+
+int
+3. Which of the following statements is true? 
+
+Reference types are stored in the stack.
+
+Value types can only store numbers.
+
+Use the new operator to create a new instance of a reference type and return its address to the variable.
+Correct. Use the new operator to create a new instance of a reference type and return its address to the variable.
+
+1. Which is the best technique to convert a decimal type to an int type in C#? 
+
+Cast
+Correct. decimal to int is a narrowing conversion so cast is the best answer.
+
+
+Narrowing
+
+Implicit conversion
+2. Which of the following conversion rounds the value (versus truncate)? 
+
+int cost = (int)3.75m;
+
+int cost = Convert.ToInt32(3.75m);
+Correct. Convert.ToInt32() rounds values with fractional precision.
+
+
+uint cost = (uint)3.75m;
+
+1. Which technique should be used to change myInput, a string value "2.71828", into a decimal variable myInputDecimal? 
+
+decimal myInputDecimal = (decimal)(myInput);
+
+decimal myInputDecimal = myInput + 0;
+
+decimal.TryParse(myInput, out myInputDecimal);
+Correct. Using TryParse (or Parse()) is a valid technique.
+
+2. Consider the C# code bool success = decimal.TryParse(input, out decimal number);. Which best describes the return type of decimal.TryParse()? 
+
+decimal
+
+bool
+Correct. TryParse() returns a bool.
+
+out
+
+1. Which technique results in an error when used to convert a string value 4.123456789 into a decimal? 
+
+Convert.ToDecimal()
+
+decimal.TryParse()
+
+(decimal)
+Correct. It isn't possible to directly cast a string into a decimal and results in an error.
+
+2. What type of action is being performed when changing a float into an int? 
+
+A narrowing conversion.
+Correct. Changing a float into an int is a narrowing conversion, because float can store more precision data compared to int.
+
+
+A widening conversion.
+
+An illegal conversion.
+
+1. Which best describes the code Array.Sort(pallets); where pallets is a string array? 
+
+Sort represents a cast operation
+
+Sort is an Array method.
+Correct. Sort is an Array method.
+
+
+Sort is used to sort array amount of precision.
+
+
+1. What best describes the code Array.Clear(pallets, 0, 2); where pallets is a string array? 
+
+Array.Clear(pallets, 0, 2); removes the data from 2 array elements starting from item 0.
+Correct. Clear is a method of arrays that removes (replaces with Null) specific elements in an array.
+
+
+Array.Clear(pallets, 0, 2); removes the data from array element locations pallets[0] and pallets[2].
+
+Array.Clear(pallets, 0, 2); removes array elements that are equal to 0 or 2.
+
+1. String.Join("-", myArray); is an example of a Join. Which explanation best fits this example? 
+
+Constructs a character array from items in myArray connected with , (commas).
+
+Constructs a string from items in myArray connected with - (dashes).
+Correct. String.Join constructs strings from the elements of myArray).
+
+Constructs a string named myArray connected with - (dashes).
+
+
+1. Which method changes the order of items in an string array? 
+
+myArray.Resize()
+
+myArray.Clear()
+
+Array.Sort()
+Correct. Array.Sort() places string array items in ascending order.
+
+2. What is null? 
+
+The same as an empty string.
+
+The same as the value zero.
+
+A value that indicates a variable points to nothing in memory.
+Correct. Null isn't the same as an empty string or the value zero.
+
+1. Which is the output of Console.WriteLine($"Tax rate: {tax:P1}");, where tax is defined by decimal tax =.12051 m;? 
+
+Tax rate: 12.05%
+
+Tax rate: 12.10%
+
+Tax rate: 12.1%
+Correct. tax: P1 rounds the percentage to a single decimal place.
+
+1. Given string myWords = "Learning C#", what is the best output description for Console.WriteLine(myWords.PadLeft(12));? 
+
+One space is added to the start of the string.
+Correct. myWords is 11 characters long, adding on space completes the padding to 12.
+
+
+Four spaces are added to the start of the string.
+
+12 spaces are added to the start of the string.
+Incorrect. myWords is 11 characters long, with 12 spaces added the padding goes to 23.
+
+
+1. For the C# code Console.WriteLine("C110".PadLeft(6, '0'));, which is the expected output? 
+
+C11000
+
+C110000000
+
+00C110
+Correct. .PadLeft(6, '0') appends zeros to the left side of a string until the string is six characters long.
+
+2. Which format specifier presents a decimal value with the following format to an en-US audience: 12,345.67 
+
+0:C
+
+0:H
+
+0:N2
+Correct. N2 is the correct format specifier.
+
+3. Which character must be used as a directive to perform string interpolation? 
+
+$
+Correct. The $ directive is used to perform string interpolation.
+
+
+@
+
+%
