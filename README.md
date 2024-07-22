@@ -480,11 +480,13 @@ decimal myDecimal = myInt;
 
 #### Narrowing conversion
 - The term narrowing conversion means that you're attempting to convert a value from a data type that can hold more information to a data type that can hold less information. In this case, you may lose information such as precision (that is, the number of values after the decimal point). An example is converting value stored in a variable of type decimal into a variable of type int.
+- When you know you're performing a narrowing conversion, you need to perform a cast. Casting is an instruction to the C# compiler that you know precision may be lost, but you're willing to accept it.
 
 
 ### Explicit Conversion
 - To perform a cast, you use the casting operator () to surround a data type, then place it next to the variable you want to convert (example: (int)myDecimal).
 - You perform an explicit conversion to the defined cast data type (int).
+- Use cast to convert decimal to int.
 
 ```cs
 int myInt = (int)myDecimal;
@@ -533,3 +535,40 @@ Console.WriteLine(value);
 int value2 = Convert.ToInt32(1.5m); // converting rounds up
 Console.WriteLine(value2);
 ```
+### Use TryParse()
+The TryParse() method does several things simultaneously:
+
+- It attempts to parse a string into the given numeric data type.
+- If successful, it stores the converted value in an out parameter, explained in following section.
+- It returns a bool to indicate whether the action succeeded or failed.
+
+```cs
+string value = "102";
+int result = 0;
+if (int.TryParse(value, out result))
+{
+   Console.WriteLine($"Measurement: {result}");
+}
+```
+
+## Working with Arrays Methods
+The Array class has methods that can manipulate the size and contents of an array.
+
+### Sort() 
+- Use the Sort() method to manipulate the order based on the given data type of the array.
+- Sort() method of the Array class to sort the items in the array alphanumerically
+  
+```cs
+string[] pallets = { "B14", "A11", "B12", "A13" };
+Array.Sort(pallets);
+```
+
+### Reverse()
+- Use the Reverse() method to flip the order of the elements in the array.
+- Reverse() method of the Array class to reverse the order of items
+  
+```cs
+string[] pallets = { "B14", "A11", "B12", "A13" };
+Array.Reverse(pallets);
+```
+
