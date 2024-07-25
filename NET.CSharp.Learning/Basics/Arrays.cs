@@ -9,7 +9,7 @@ namespace NET.CSharp.Learning.Basics
     internal class Arrays
     {
 
-        void declaringArray()
+        void DeclaringArray()
         {
             string[] orderIDs = new string[3];
 
@@ -27,7 +27,7 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine($"Reassign First: {orderIDs[0]}");
         }
 
-        void initilizeArray()
+        void InitilizeArray()
         {
             string[] orderIDs = { "A001", "B002", "C003" };
 
@@ -36,14 +36,14 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine($"Third: {orderIDs[2]}");
         }
 
-        void lengthOfArray()
+        void LengthOfArray()
         {
             string[] orderIDs = { "A001", "B002", "C003" };
 
             Console.WriteLine($"Lenght: {orderIDs.Length}");
         }
 
-        void loopingArray()
+        void LoopingArray()
         {
             int[] inventory = { 200, 450, 700, 175, 250 };
             int sum = 0;
@@ -57,7 +57,107 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine($"We have {sum} items in inventory.");
         }
 
-        void detectsValuesStartingWithB()
+        void SortArray() {
+            string[] pallets = { "B14", "A11", "B12", "A13" };
+
+            Console.WriteLine("Sorted...");
+            Array.Sort(pallets);
+            foreach (var pallet in pallets)
+            {
+                Console.WriteLine($"-- {pallet}");
+            }
+        }
+
+        void ReverseArray() {
+            string[] pallets = { "B14", "A11", "B12", "A13" };
+
+            Console.WriteLine("Sorted...");
+            Array.Sort(pallets);
+            foreach (var pallet in pallets)
+            {
+                Console.WriteLine($"-- {pallet}");
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Reversed...");
+            Array.Reverse(pallets);
+            foreach (var pallet in pallets)
+            {
+                Console.WriteLine($"-- {pallet}");
+            }
+
+        }
+
+        void StringToCharArray()
+        {
+            string value = "ABC123";
+            char[] chars = value.ToCharArray();
+            Array.Reverse(chars);
+            string reversed = new string(chars);
+            Console.WriteLine(reversed);
+
+        }
+
+        void StringJoinString() {
+            string value = "ABC123";
+            char[] chars = value.ToCharArray();
+            string joined = String.Join(",", chars);
+            Console.WriteLine(joined);
+        }
+
+        void SplitString() {
+
+            string value = "This is an example, using split, from and string, separated by commas";
+            string[] arrayValues = value.Split(',');
+            foreach (var arrayValue in arrayValues)
+            {
+                Console.WriteLine(arrayValue);
+            }
+        }
+
+        void ReverseWordFromText() {
+
+            string pangram = "The quick brown fox jumps over the lazy dog";
+
+            // Step 1
+            string[] message = pangram.Split(' ');
+
+            //Step 2
+            string[] newMessage = new string[message.Length];
+
+            // Step 3
+            for (int i = 0; i < message.Length; i++)
+            {
+                char[] letters = message[i].ToCharArray();
+                Array.Reverse(letters);
+                newMessage[i] = new string(letters);
+            }
+
+            //Step 4
+            string result = String.Join(" ", newMessage);
+            Console.WriteLine(result);
+        }
+
+        void SplitSortString() {
+            string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+            string[] items = orderStream.Split(',');
+            Array.Sort(items);
+
+            foreach (var item in items)
+            {
+                if (item.Length == 4)
+                {
+                    Console.WriteLine(item);
+                }
+                else
+                {
+                    Console.WriteLine(item + "\t- Error");
+                }
+            }
+
+        }
+
+        void DetectsValuesStartingWithB()
         {
             string[] names = { "Bob", "Maria", "Brenda"};
             foreach (string name in names)
@@ -69,7 +169,7 @@ namespace NET.CSharp.Learning.Basics
             }
         }
 
-        void sampleStudentCredit()
+        void SampleStudentCredit()
         {
             // initialize variables - graded assignments
             int examAssignments = 5;
