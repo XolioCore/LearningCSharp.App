@@ -729,3 +729,49 @@ It's identical to the break keyword.
 **Correct!** The return statement terminates execution of its method and returns control to the caller.
 
 It must always be used with a value or expression.
+
+### 1. Which of the following method signatures correctly defines 3 integer parameters? 
+
+void Multiply(int a, b, c)
+
+void Multiply(int a, int b, int c)
+Correct! The data type for each parameter is included and parameters are comma separated.
+
+
+void Multiply(int a; int b; int c)
+### 2. Given the method signature, void Print(string name, string number = "", bool member = false), which of the following options correctly uses named and optional arguments? 
+
+Print("Tony", member: true);
+Correct! The optional argument is included using the parameter name followed by a :
+
+
+Print(number: "555", member: false)
+
+Print("Tony", false)
+### 3. Given the following method signature, void SetHealth(string health), why don't operations inside the method affect the original input string health? 
+
+The string data type is pass by value.
+
+The method code must be incorrect.
+
+```Strings can't be altered once assigned. They can only be overwritten with a new value.```
+Correct! Strings are pass by reference, but they're immutable and can't be altered once assigned.
+
+### 1. What data type is returned from the following statement: return 100 * 0.5; 
+
+An int type
+
+A decimal type
+
+A double type
+double is correct. Since an integer literal is being multiplied by a double, this line of code returns a double.
+
+### 2. Which type of method doesn't need to include a return statement? 
+
+string methods
+
+void methods
+void is correct! void methods don't need to use a return statement.
+
+array methods
+
