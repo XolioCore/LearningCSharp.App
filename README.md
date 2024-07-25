@@ -807,5 +807,35 @@ void CountTo(int max)
 - Methods don't have access to variables defined within different methods.
 - Methods can call other methods.
 
+### Methods with optional parameters
 
+- Parameters are made optional by setting a default value in the method signature.
+- A parameter becomes optional when it's assigned a default value
+- Named arguments are specified with the parameter name, followed by a colon and the argument value.
+- When combining named and positional arguments, you must use the correct order of parameters.
+
+```cs
+-- Named parameters
+RSVP(name: "Linh", partySize: 2, allergies: "none", inviteOnly: false);
+
+-- Optional parameters
+void RSVP(string name, int partySize = 1, string allergies = "none", bool inviteOnly = true)
+```
+
+### return type syntax
+- Methods can return a value by including the return type in the method signature.
+- Methods can return any data type, or they can return nothing at all.
+- The return type must always be specified before the method name.
+- Using void as the return type means the method only performs operations and doesn't return a value
+- When a data type (such as int, string, bool, etc.) is used, the method performs operations and then returns the specified type upon completion.
+- Inside the method, the keyword return is used to return the result.
+- In void methods, you can also use the return keyword to terminate the method.
+
+```cs
+int UsdToVnd(double usd) 
+{
+    int rate = 23500;
+    return (int) (rate * usd);
+}
+```
 
