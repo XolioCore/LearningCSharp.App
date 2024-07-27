@@ -775,3 +775,32 @@ void is correct! void methods don't need to use a return statement.
 
 array methods
 
+
+### 1. Which of the following options correctly returns a string value? 
+
+return "";
+Correct! An empty string is a valid string result.
+
+
+return 'a';
+
+return 5;
+### 2. Which of the following statements is true about the return keyword? 
+
+It starts a new iteration of a method.
+
+It terminates the execution of a method.
+Correct! The return statement terminates execution of its method and returns control to the caller.
+
+It must always be used with a value or expression.
+
+### 3. Which of the following options is a valid return statement? 
+
+return void;
+
+return 5 % 2;
+Correct! This statement would return the value of the expression 5 % 2
+
+
+return Console.WriteLine();
+
