@@ -822,7 +822,7 @@ RSVP(name: "Linh", partySize: 2, allergies: "none", inviteOnly: false);
 void RSVP(string name, int partySize = 1, string allergies = "none", bool inviteOnly = true)
 ```
 
-### return type syntax
+### Return type syntax
 - Methods can return a value by including the return type in the method signature.
 - Methods can return any data type, or they can return nothing at all.
 - The return type must always be specified before the method name.
@@ -839,3 +839,4 @@ int UsdToVnd(double usd)
 }
 ```
 
+### 
