@@ -164,5 +164,12 @@ namespace NET.CSharp.Learning.Basics
 
 
         }
+
+        void MethodWithDefaultParams(string first, string last, string domain = "contoso.com")
+        {
+            string email = first.Substring(0, 2) + last;
+            email = email.ToLower();
+            Console.WriteLine($"{email}@{domain}");
+        }
     }
 }

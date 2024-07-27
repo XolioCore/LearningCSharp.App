@@ -62,5 +62,29 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine("The first vowel in \n   {0}\nis found at position {1}",
                               s, s.IndexOfAny(chars) + 1);
         }
+
+
+        string ReverseSentence(string input)
+        {
+            string result = "";
+            string[] words = input.Split(" ");
+            foreach (string word in words)
+            {
+                result += ReverseWord(word) + " ";
+            }
+            return result.Trim();
+        }
+
+        string ReverseWord(string word)
+        {
+            string result = "";
+            for (int i = word.Length - 1; i >= 0; i--)
+            {
+                result += word[i];
+            }
+            return result;
+        }
+
+
     }
 }
