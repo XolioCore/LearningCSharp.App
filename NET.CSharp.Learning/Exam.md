@@ -804,3 +804,145 @@ Correct! This statement would return the value of the expression 5 % 2
 
 return Console.WriteLine();
 
+### 1. What is the purpose of defining an optional parameter in a method? 
+
+To cause a method to perform a different task.
+
+To overload a method.
+
+To simplify the required parameters when a parameter isn't significant to the result.
+Correct! Optional parameters enable you to pass fewer arguments and accomplish the method task.
+
+### 2. What is the purpose of pseudo-code? 
+
+To provide a design template for the intended code.
+Correct! Pseudo-code helps to bridge the gap between concept and code.
+
+
+To safely cast operations performed in methods.
+
+To develop syntactically correct code.
+
+
+### 1. A developer wants to create a method that compares two values. Which of the following options is the best data type for the method to return? 
+
+A double value.
+
+Nothing, the method should be void.
+
+A bool value.
+Correct! A comparison expression should return true or false.
+
+### 2. A developer wants to create a method that returns a value in an array. Which of the following options would be a good choice for a method signature? 
+
+string GetValueAtIndex(string[] array, int index)
+Correct! This method accepts a string array and an index value and returns a string value.
+
+
+bool GetValueAtIndex(string[] array, int index)
+
+int GetValueAtIndex(int index)
+
+### 1. What is code debugging? 
+
+A process to identify code syntax errors during the build process.
+
+A process to isolate and fix issues in code logic.
+Correct. Code debugging involves isolating and fixing logic issues in code.
+
+
+A process to verify that code builds and runs without errors.
+### 2. Who is responsible for software testing? 
+
+Software developers.
+Incorrect. Although software developers have some responsibility for code testing, they share the responsibility with testers.
+
+
+Software testers.
+
+Both developers and testers.
+Correct. Software developers and testers share the responsibility for code testing.
+
+### 3. What happens if an exception isn't managed in code? 
+
+The code continues to run without any issue.
+
+The application generates an error message and closes.
+Correct. If an exception isn't managed in code, the runtime will display an error message and the application may be terminated.
+
+
+The code syntax errors are displayed to the user.
+
+### 1. What is a debugger? 
+
+A software tool used to observe and control the execution flow of a program.
+Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program.
+
+
+A program that generates code automatically based on user input.
+
+A tool that helps developers write their code faster.
+### 2. What is the primary benefit of using a debugger? 
+
+A debugger helps developers to write code faster.
+
+A debugger enables developers to watch their application running and follow program execution one line of code at a time.
+Correct. The primary benefit of using a debugger is watching application code run and following program execution one line of code at a time.
+
+
+A debugger helps developers to add new features to their application.
+### 3. What is one of the most important features of a debugger? 
+
+Code generation.
+
+Observation of your program's state.
+Correct. Observation of your program's state is one of the most important features that come with almost all debuggers.
+
+
+Automatic bug fixing.
+### 4. What is the best way to find the root cause of a bug? 
+
+Running your app with different data.
+
+Breadcrumbing a few Console.WriteLine("here") messages in your code.
+
+Using a debugger.
+Correct. Using a debugger is the best way to find the root cause of a bug.
+
+### 1. What is the purpose of catching an exception in C#? 
+
+To ignore errors that occur in a program.
+
+To take corrective action when an error occurs in a program.
+Correct. The purpose of catching an exception is to take corrective action when an error occurs.
+
+
+To generate additional errors in a program.
+### 2. Can a developer access the contents of an exception at runtime? 
+
+No, exceptions can never be accessed.
+
+Yes, exceptions can be accessed and used to take corrective action.
+Correct. Exceptions are objects that can be accessed. The properties of an exception can be used to help determine corrective action.
+
+
+Exceptions can be accessed, but not during the application runtime.
+### 3. What happens when execution of a C# application results in a system error? 
+
+The program crashes and closes.
+
+An exception is created and thrown by the .NET runtime.
+Correct. The .NET runtime throws an exception when a C# application generates a system error.
+
+
+The error is silently ignored and the program continues to run.
+### 4. What is the relationship between the type of exception and the information it contains? 
+
+The type of exception and the information it contains are unrelated.
+
+The type of exception determines the information it contains.
+Correct. The type of exception determines the information it contains.
+
+
+The information contained in an exception determines the type of exception.
+Incorrect. The exception type determines what information the exception contains, not the other way around.
