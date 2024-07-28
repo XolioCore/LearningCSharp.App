@@ -839,4 +839,50 @@ int UsdToVnd(double usd)
 }
 ```
 
-### 
+### Testing, Debugging, and Exception Handling
+
+- The term "exception handling" refers to the process that a developer uses to manage those runtime exceptions within their code.
+- Errors that occur during the build process are referred to as errors, and aren't part of the exception handling process.
+- Software testing categories can be organized under the types of testing, the approaches to testing, or a combination of both.
+- One way to categorize the types of testing is to split testing into Functional and Nonfunctional testing.
+- The functional and nonfunctional categories each include subcategories of testing.
+- For example, functional and nonfunctional testing could be divided into the following subcategories:
+
+	- Functional testing - Unit testing - Integration testing - System testing - Acceptance testing
+	- Nonfunctional testing - Security testing - Performance testing - Usability testing - Compatibility testing
+
+#### Code debugging 
+- Code debugging is a process that developers use to isolate an issue and identify one or more ways to fix it.
+- The issue could be related to either code logic or an exception. Either way, you work on debugging your code when it isn't working the way you want it to.
+- Generally speaking, the term debugging is reserved for runtime issues that aren't easy to isolate.
+
+#### Exception handling
+- Exception handling is the process of managing errors that occur during runtime, and developers are responsible for handling exceptions by using "try" and "catch" statements in their code.
+- As you read earlier, errors that occur during the application runtime are referred to as exceptions. If an application generates an exception, and that exception isn't managed in code, it can result in the application being shut down.
+- Handling exceptions is definitely a responsibility of the developer. C# provides a way for you to "try" the code that you know might generate an exception, and a way for you to "catch" any exceptions that do occur.
+
+#### Code debugging process
+- The one approach that's commonly regarded as being the most successful is using a debugger.
+- A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach.
+- Debuggers help you isolate the cause of a bug and help you resolve it.
+- A debugger connects to your code using one of two approaches:
+  	- By hosting your program in its own execution process.
+	- By running as a separate process that's attached to your running program.
+
+ - The primary benefit of using a debugger is that you can watch your program running. You can follow program execution one line of code at a time. This approach minimizes the chance of guessing wrong.
+ - The two most important features that come with almost all debuggers are:
+	- Control of your program execution. You can pause your program and run it step by step, which allows you to see what code is executed and how it affects your program's state.
+ 	- Observation of your program's state. For example, you can look at the value of your variables and function parameters at any point during your code execution.
+
+### What are exceptions?
+
+- In C#, errors in the program at runtime are propagated through the program by using a mechanism called exceptions.
+- Exceptions are thrown by code that encounters an error and caught by code that can correct the error.
+- Exceptions can be thrown by the .NET runtime or by code in a program.
+- Exceptions are represented by classes derived from Exception.
+- Each class identifies the type of exception and contains properties that have details about the exception.
+- Exceptions are used in C# to propagate errors at runtime, and are represented by classes derived from the Exception class.
+- Exceptions are thrown by code that encounters an error and caught by code that can correct the error.
+- When an exception is caught, code can access its contents and take corrective action to mitigate the error.
+- The .NET runtime generates exceptions when it detects an error and the exception contains information about the type of error that occurred.
+
