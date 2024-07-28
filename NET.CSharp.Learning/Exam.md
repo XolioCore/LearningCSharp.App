@@ -946,3 +946,103 @@ Correct. The type of exception determines the information it contains.
 
 The information contained in an exception determines the type of exception.
 Incorrect. The exception type determines what information the exception contains, not the other way around.
+
+### 1. What is code debugging? 
+
+A process to identify code syntax errors during the build process.
+
+A process to isolate and fix issues in code logic.
+Correct. Code debugging involves isolating and fixing logic issues in code.
+
+
+A process to verify that code builds and runs without errors.
+### 2. What is a debugger? 
+
+A software tool used to observe and control the execution flow of a program.
+Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program.
+
+
+A program that generates code automatically based on user input.
+
+A tool that helps developers write their code faster.
+### 3. What happens when execution of a C# application results in a system error? 
+
+The program crashes and closes.
+
+The .NET runtime creates and throws an exception.
+Correct. The .NET runtime throws an exception when a C# application generates a system error.
+
+
+The error is silently ignored and the program continues to run.
+### 4. What is the purpose of catching an exception in C#? 
+
+To ignore the errors that occur in a program.
+
+To generate other exceptions in a program.
+
+To take corrective action when an error occurs in a program.
+Correct. The purpose of catching an exception is to take corrective action when an error occurs.
+
+### 5. What is the relationship between the type of exception and the information it contains? 
+
+The type of exception determines the information it contains.
+Correct. The type of exception determines the information it contains.
+
+
+The type of exception and the information it contains are unrelated.
+
+The information contained in an exception determines the type of exception.
+
+### 1. Which section of the Run menu enables a developer to edit or add launch configurations? 
+
+The start and stop applications section.
+
+The launch configurations section.
+Correct. The configurations section of the Run menu provides access to edit or add launch configurations in Visual Studio Code.
+
+
+The install debuggers section.
+### 2. Which section of the RUN AND DEBUG view is used to track the current point of execution within the running application? 
+
+VARIABLES section.
+
+CALL STACK section.
+Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application.
+
+
+WATCH section.
+### 3. Which button on the Debug toolbar can be used resume normal code execution? 
+
+The Pause/Continue button.
+Correct. The Pause/Continue button on the Debug toolbar can be used to pause execution when the code is running and continue when code execution has been paused.
+
+
+The Step Over button.
+
+The Restart button.
+### 4. Which section of the Run menu enables the developer to set breakpoints on code lines? 
+
+The Manage Breakpoints section.
+
+The Start and stop applications section.
+
+The Set Breakpoints section.
+Correct. The Set Breakpoints section of the Run menu enables the developer to set breakpoints on code lines.
+
+### 5. What capability does the "More" dropdown on the right side of the Debug toolbar provide? 
+
+An option to disconnect the debugger.
+Correct. The "More" dropdown on the right side of the Debug toolbar enables a developer to disconnect the debugger from the current process
+
+
+An option to edit launch configurations.
+
+An option to manage breakpoints.
+### 6. Which of the following can be used to configure and start a debug session? 
+
+The Debug toolbar.
+
+The VARIABLES section of the RUN AND DEBUG view.
+
+The Run and Debug controls panel.
+Correct. The Run and Debug controls panel is used to configure and start a debug session from the RUN AND DEBUG view in Visual Studio Code.
