@@ -1046,3 +1046,50 @@ The VARIABLES section of the RUN AND DEBUG view.
 
 The Run and Debug controls panel.
 Correct. The Run and Debug controls panel is used to configure and start a debug session from the RUN AND DEBUG view in Visual Studio Code.
+
+### 1. Which of the following options can be used set a breakpoint in Visual Studio Code? 
+
+Left-click in the column to the left of a line number in the code editor.
+Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking.
+
+
+Select Toggle Breakpoint on the Edit menu.
+
+Right-click in the middle of a line of code, and then select Toggle Breakpoint.
+### 2. How can a developer disable a breakpoint in Visual Studio Code? 
+
+Click Remove Breakpoint on the Run menu.
+
+Right-click the red dot to the left of the line number and select Disable Breakpoint.
+Correct. A breakpoint can be disabled by right-clicking the red dot that represents a breakpoint and then selecting Disable Breakpoint.
+
+
+Left-click the red dot to the left of the line number.
+### 3. What happens when a developer disables a breakpoint in Visual Studio Code? 
+
+The breakpoint is removed from the code entirely.
+
+The breakpoint is skipped over during debugging.
+Correct. When a breakpoint is disabled, it is skipped over during debugging. In the user interface, the red dot representing the breakpoint is changed to a grey dot.
+
+
+The breakpoint will only be triggered if dot to the left of the line number is changed to a grey dot.
+### 4. What is a conditional breakpoint in Visual Studio Code? 
+
+A breakpoint that only triggers when a specified condition is met.
+Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met.
+
+
+A breakpoint that is triggered every time the code is run.
+
+A breakpoint that is only visible in the editor and doesn't affect debugging.
+### 5. How can a developer create a conditional breakpoint in Visual Studio Code? 
+
+Left-click in the column to the left of a line number in the code editor.
+
+Select Toggle Conditional Breakpoint on the Run menu.
+
+Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.
+Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint.
+
+
