@@ -974,3 +974,48 @@ In addition to six execution controls, the Debug toolbar provides a "handle" on 
  Note
 
 You can use the setting debug.toolBarLocation to control the location of the debug toolbar. It can be floating (the default), docked to the RUN AND DEBUG view, or hidden. A floating debug toolbar can be dragged horizontally and down to the Editor area.
+
+
+### Breakpoint configuration
+
+#### Set Breakpoint
+- Breakpoints are used to specify where code execution pauses
+- Visual Studio Code provides several ways to configure breakpoints in your code. For example:
+	- Code Editor: You can set a breakpoint in the Visual Studio Code Editor by clicking in the column to the left of a line number.
+	- Run menu: You can toggle a breakpoint on/off from the Run menu. The current code line in the Editor specifies where the Toggle Breakpoint action is applied.
+
+ #### Remove Breakpoint
+ - To remove a breakpoint, repeat the action used to set a breakpoint.
+ - For example, click the red circle to the left of the line number or use the toggle breakpoint option on the Run menu.
+ - ![image](https://github.com/user-attachments/assets/d1299dea-47ec-4870-b833-5eaae6cc8694)
+
+#### All Breakpoint operations
+- the Run menu provides options for performing bulk operations that act on all breakpoints:
+	- Enable All Breakpoints: Use this option to enable all disabled breakpoints.
+	- Disable All Breakpoints: Use this option to disable all breakpoints.
+	- Remove All Breakpoints: Use this option to remove all breakpoints (both enabled and disabled breakpoints are removed).
+
+#### Conditional breakpoints
+
+- A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met.
+- For example, you can create a conditional breakpoint that pauses execution when a variable named numItems is greater than 5.
+![image](https://github.com/user-attachments/assets/e1996c33-0559-4e17-85d0-d372467f84f3)
+![image](https://github.com/user-attachments/assets/c003d3bf-16d2-4880-8e34-88127def6477)
+![image](https://github.com/user-attachments/assets/6e4e0b4a-6c7d-4399-8b61-b1854a60b7f8)
+
+#### Hit Count breakpoints 
+- A 'hit count' breakpoint can be used to specify the number of times that a breakpoint must be encountered before it will 'break' execution.
+- You can specify a hit count value when creating a new breakpoint (with the Add Conditional Breakpoint action) or when modifying an existing one (with the Edit Condition action).
+- In both cases, an inline text box with a dropdown menu opens where you can enter the hit count value.
+
+#### Logpoints
+- A 'Logpoint' is a variant of a breakpoint that does not "break" into the debugger but instead logs a message to the console.
+- Logpoints are especially useful for injecting logging while debugging production environments that cannot be paused or stopped.
+- A Logpoint is represented by a "diamond" shaped icon rather than a filled circle. Log messages are plain text but can include expressions to be evaluated within curly braces ('{}').
+- Logpoints can include a conditional 'expression' and/or 'hit count' to further control when logging messages are generated. 
+
+#### Step Into and Step Out
+- Use breakpoints to pause code execution during a debug session.
+- Use Step Into from the Debug controls toolbar to observe the next executable code line. The Step Into button is used to advance to the next executable statement.
+- Use Step Out from the Debug controls toolbar to advance through the current method and back to the code line that called the method.
+
