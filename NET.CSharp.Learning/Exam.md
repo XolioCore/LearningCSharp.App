@@ -1377,3 +1377,91 @@ The Message property shouldn't explain the reason for the exception.
 
 The Message property should explain the reason for the exception.
 Correct. The Message property of an exception should explain the reason for the exception. Since Message is a read-only property, it must be assigned when instantiating the exception object.
+
+### 1. What is the purpose of catching an exception in C#? 
+
+To ignore the errors that occur in a program.
+
+To generate other exceptions in a program.
+
+To take corrective action when an error occurs in a program.
+Correct. The purpose of catching an exception is to take corrective action when an error occurs.
+
+### 2. What is the relationship between the type of exception and the information it contains? 
+
+The type of exception and the information it contains are unrelated.
+
+The type of exception determines the information it contains.
+Correct. The type of exception determines the information it contains.
+
+
+The information contained in an exception determines the type of exception.
+### 3. What is a conditional breakpoint in Visual Studio Code? 
+
+A breakpoint that only triggers when a specified condition is met.
+Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met.
+
+
+A breakpoint that is triggered every time the code is run.
+
+A breakpoint that is only visible in the editor and doesn't affect debugging.
+### 4. When is an ArgumentOutOfRangeException exception thrown? 
+
+An ArgumentOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+Incorrect. This answer choice describes when an IndexOutOfRangeException exception is thrown.
+
+
+An ArgumentOutOfRangeException exception is thrown when the value of an argument is outside the allowable range of values as defined by the method.
+Correct. An ArgumentOutOfRangeException exception should only be thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+
+
+An ArgumentOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+### 5. What is the recommended approach for catching exceptions in C#? 
+
+Catch any type of exception without specifying an object argument.
+
+Catch only the exceptions that your code knows how to recover from.
+Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from.
+
+
+Catch only the exceptions that aren't derived from System.Exception.
+
+
+### 1. How can a developer create a conditional breakpoint in Visual Studio Code? 
+
+Left-click in the column to the left of a line number in the code editor.
+
+Select Toggle Conditional Breakpoint on the Run menu.
+
+Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.
+Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint.
+
+### 2. In a launch configuration file, what is the console attribute used for? 
+
+Specifies the working directory of the target process.
+
+Specifies the type of debugger to use for this launch configuration.
+
+Specifies the type of console that's used when the application is launched.
+Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole.
+
+### 3. Which section of the RUN AND DEBUG view is used to track the current point of execution within the running application? 
+
+The VARIABLES section.
+
+The CALL STACK section.
+Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application.
+
+
+The WATCH section.
+Incorrect. The WATCH section is used to monitor variables or expressions.
+
+### 4. Which of the following options can be used set a breakpoint in Visual Studio Code? 
+
+Left-click in the column to the left of a line number in the code editor.
+Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking.
+
+
+Select Toggle Breakpoint on the Edit menu.
+
+Right-click in the middle of a line of code, and then select Toggle Breakpoint.
