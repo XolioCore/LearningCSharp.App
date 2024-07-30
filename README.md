@@ -1128,4 +1128,95 @@ finally
 - The call layer that it needs is the method that has a catch clause that can handle the exception that occurred.
 - When an exception occurs, the .NET runtime searches for the nearest catch clause that can handle it. The search starts with the method where the exception was thrown, and moves down the call stack if necessary.
 
+#### Compiler-generated exceptions
+The .NET runtime throws exceptions when basic operations fail. Here's a short list of runtime exceptions and their error conditions:
+
+- **ArrayTypeMismatchException**: Thrown when an array can't store a given element because the actual type of the element is incompatible with the actual type of the array.
+- **DivideByZeroException**: Thrown when an attempt is made to divide an integral value by zero.
+- **FormatException**: Thrown when the format of an argument is invalid.
+- **IndexOutOfRangeException**: Thrown when an attempt is made to index an array when the index is less than zero or outside the bounds of the array.
+- **InvalidCastException**: Thrown when an explicit conversion from a base type to an interface or to a derived type fails at runtime.
+- **NullReferenceException**: Thrown when an attempt is made to reference an object whose value is null.
+- **OverflowException**: Thrown when an arithmetic operation in a checked context overflows.
+
+#### Properties of the Exception class:
+
+- **Data**: The Data property holds arbitrary data in key-value pairs.
+- **HelpLink**: The HelpLink property can be used to hold a URL (or URN) to a help file that provides extensive information about the cause of an exception.
+- **HResult**: The HResult property can be used to access to a coded numerical value that's assigned to a specific exception.
+- **InnerException**: The InnerException property can be used to create and preserve a series of exceptions during exception handling.
+- **Message**: The Message property provides details about the cause of an exception.
+- **Source**: The Source property can be used to access the name of the application or the object that causes the error.
+- **StackTrace**: The StackTrace property contains a stack trace that can be used to determine where an error occurred.
+- **TargetSite**: The TargetSite property can be used to get the method that throws the current exception.
+
+```cs
+static void Process1()
+{
+    try
+    {
+        WriteMessage();
+    }
+    catch (DivideByZeroException ex)
+    {
+        Console.WriteLine($"Exception caught in Process1: {ex.Message}");
+    }
+}
+```
+
+```cs
+// inputValues is used to store numeric values entered by a user
+string[] inputValues = new string[]{"three", "9999999999", "0", "2" };
+
+foreach (string inputValue in inputValues)
+{
+    int numValue = 0;
+    try
+    {
+        numValue = int.Parse(inputValue);
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Invalid readResult. Please enter a valid number.");
+    }
+    catch (OverflowException)
+    {
+        Console.WriteLine("The number you entered is too large or too small.");
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+}
+```
+
+#### Exception reference links
+https://learn.microsoft.com/dotnet/standard/exceptions/exception-class-and-properties
+https://learn.microsoft.com/dotnet/api/system.exception.
+
+#### Create New Exception
+
+Here are some common exception types that you might use when creating an exception:
+
+- **ArgumentException** or **ArgumentNullException**: Use these exception types when a method or constructor is called with an invalid argument value or null reference.
+- **InvalidOperationException**: Use this exception type when the operating conditions of a method don't support the successful completion of a particular method call.
+- **NotSupportedException**: Use this exception type when an operation or feature is not supported.
+- **IOException**: Use this exception type when an input/output operation fails.
+- **FormatException**: Use this exception type when the format of a string or data is incorrect.
+
+```cs
+ArgumentException invalidArgumentException = new ArgumentException();
+```
+
+- When creating and throwing an exception, the exception type must match the intended purpose of the exception as closely as possible.
+- To throw an exception, you create an instance of an exception-derived class, configure its properties, and then use the throw keyword.
+- When creating an exception object, it's important to provide clear error messages and additional information to help users correct the issue.
+
+#### Things to avoid when throwing exceptions
+The following list identifies practices to avoid when throwing exceptions:
+
+- Don't use exceptions to change the flow of a program as part of ordinary execution. Use exceptions to report and handle error conditions.
+- Exceptions shouldn't be returned as a return value or parameter instead of being thrown.
+- Don't throw System.Exception, System.SystemException, System.NullReferenceException, or System.IndexOutOfRangeException intentionally from your own source code.
+- Don't create exceptions that can be thrown in debug mode but not release mode. To identify runtime errors during the development phase, use Debug.Assert instead.
 
