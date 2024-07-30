@@ -1210,3 +1210,170 @@ To handle the exception, log it, or ignore it.
 
 To clean up any resources that are allocated in a try block.
 Correct. The finally block is often used to clean up any resources that are allocated in a try block. The finally code block contains code that executes whether an exception occurs or not.
+
+### 1. When is an ArrayTypeMismatchException exception thrown? 
+
+An ArrayTypeMismatchException exception is thrown when an attempt is made to divide an integral value by zero.
+
+An ArrayTypeMismatchException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+
+An ArrayTypeMismatchException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+Correct. The ArrayTypeMismatchException exception is thrown when an attempt is made to store an element of the wrong type within an array.
+
+### 2. When is a DivideByZeroException exception thrown? 
+
+A DivideByZeroException exception is thrown when an attempt is made to divide an integral value by zero.
+Correct. A DivideByZeroException is thrown when trying to divide an integer or Decimal number by zero.
+
+
+A DivideByZeroException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+
+A DivideByZeroException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+### 3. When is an IndexOutOfRangeException exception thrown? 
+
+An IndexOutOfRangeException exception is thrown when an attempt is made to divide an integral value by zero.
+
+An IndexOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+Correct. An IndexOutOfRangeException exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
+
+
+An IndexOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+### 4. When is an InvalidCastException exception thrown? 
+
+An InvalidCastException exception is thrown when an attempt is made to divide an integral value by zero.
+
+An InvalidCastException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+
+An InvalidCastException exception is thrown when attempting an invalid casting or explicit conversion.
+Correct. An InvalidCastException exception is thrown when attempting an invalid casting or explicit conversion.
+
+### 5. When is a NullReferenceException exception thrown? 
+
+A NullReferenceException exception is thrown when attempting an invalid casting or explicit conversion.
+
+A NullReferenceException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+
+A NullReferenceException exception is thrown when attempting to access a member on a type whose value is null.
+Correct. A NullReferenceException exception is thrown when attempting to access a member on a type whose value is null.
+
+### 1. What does the try code block contain? 
+
+The code that cleans up resources and is executed whether an exception occurs or not.
+
+The code that throws an exception object.
+
+The code that may cause an exception.
+Correct. The try code block contains the guarded code that may cause an exception.
+
+### 2. What is the purpose of the catch code block? 
+
+To clean up any resources that are allocated in a try block.
+
+To handle the exception, log it, or ignore it.
+Correct. The catch code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it.
+
+
+To execute code that may cause an exception.
+### 3. When is an IndexOutOfRangeException exception thrown? 
+
+An IndexOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+
+An IndexOutOfRangeException exception is thrown when attempting an invalid casting or explicit conversion.
+
+An IndexOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+Correct. An IndexOutOfRangeException exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
+
+### 4. When is an ArrayTypeMismatchException exception thrown? 
+
+An ArrayTypeMismatchException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+Correct. The ArrayTypeMismatchException exception is thrown when an attempt is made to store an element of the wrong type within an array.
+
+
+An ArrayTypeMismatchException exception is thrown when attempting to access a member on a type whose value is null.
+
+An ArrayTypeMismatchException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+### 5. What is the name of the base class that all derived exception types inherit from? 
+
+Object.
+
+System.
+
+Exception.
+Correct. In C#, System.Exception is the base class that all derived exception types inherit from.
+
+### 6. Which property of an exception object can be used to determine where an error occurred? 
+
+InnerException.
+
+StackTrace.
+Correct. The StackTrace property contains a stack trace that can be used to determine where an error occurred.
+
+
+TargetSite.
+### 7. What is the recommended approach for catching exceptions in C#? 
+
+Catch any type of exception without specifying an object argument.
+Incorrect. Catching any type of exception without specifying an object argument isn't recommended.
+
+
+Catch only the exceptions that your code knows how to recover from.
+Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from.
+
+
+Catch only the exceptions that are not derived from System.Exception.
+### 8. What is the name of the specific exception type that occurs when attempting to divide by zero in C#? 
+
+ArithmeticException.
+
+InvalidCastException.
+
+DivideByZeroException.
+Correct. In C#, the specific exception type that occurs when attempting to divide by zero is DivideByZeroException.
+
+### 1. What is the purpose of the StackTrace property of an exception object? 
+
+To track the origin of the exception.
+Correct. The StackTrace property is often used to track the origin of the exception.
+
+
+To configure the properties of the exception.
+
+To throw the exception object.
+### 2. Which of the following code lines provides an example of customizing an exception with contextual information? 
+
+Code: throw new FormatException();.
+
+Code: ArgumentException invalidArgumentException = new ArgumentException("ArgumentException: The 'GraphData' method received data outside the expected range.");.
+Correct. This code sample demonstrates how to create an exception object with a custom Message property.
+
+
+Code: ArgumentNullException argumentNullException = new ArgumentNullException();.
+
+### 1. A developer needs to create and throw an exception in a C# application. Which of the following descriptions is correct? 
+
+The exception type shouldn't match the intended purpose of the exception.
+
+The exception type that they create depends on the coding issue.
+Correct. The exception type created depends on the coding issue and should match the intended purpose of the exception as closely as possible.
+
+
+The process for throwing an exception object involves using the catch keyword.
+### 2. When should a method throw an exception? 
+
+A method should throw an exception when the method can complete its intended purpose.
+Incorrect. Methods should only throw an exception when an issue or error is detected that prevents them from completing their intended purpose.
+
+
+A method should throw an exception when the method can't complete its intended purpose.
+Correct. Methods should throw an exception whenever they can't complete their intended purpose.
+
+
+A method should throw an exception when an exception type matches the intended purpose of the method.
+### 3. A developer needs to create an exception object that includes a specific Message property. Which of the following statements is correct? 
+
+The Message property of an exception is writable.
+
+The Message property shouldn't explain the reason for the exception.
+
+The Message property should explain the reason for the exception.
+Correct. The Message property of an exception should explain the reason for the exception. Since Message is a read-only property, it must be assigned when instantiating the exception object.
