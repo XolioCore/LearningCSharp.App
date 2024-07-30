@@ -1219,4 +1219,3 @@ The following list identifies practices to avoid when throwing exceptions:
 - Exceptions shouldn't be returned as a return value or parameter instead of being thrown.
 - Don't throw System.Exception, System.SystemException, System.NullReferenceException, or System.IndexOutOfRangeException intentionally from your own source code.
 - Don't create exceptions that can be thrown in debug mode but not release mode. To identify runtime errors during the development phase, use Debug.Assert instead.
-
