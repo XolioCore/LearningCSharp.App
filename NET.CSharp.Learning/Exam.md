@@ -1173,3 +1173,40 @@ Specifies the type of debugger to use for this launch configuration.
 Specifies the type of console that's used when the application is launched.
 Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole.
 
+### 1. Which of the following answer choices lists the C# keywords used for exception handling? 
+
+try, catch, and finally.
+Incorrect. The try, catch, and finally keywords are used for exception handling in C#, but this isn't the complete list.
+
+
+try, catch, finally, and throw.
+Correct. The try, catch, finally, and throw keywords are used for exception handling in C#.
+
+
+try, catch, and throw.
+### 2. What does the try code block contain? 
+
+The code that cleans up resources and is executed whether an exception occurs or not.
+
+The code that throws an exception object.
+
+The code that may cause an exception.
+Correct. The try code block contains the guarded code that may cause an exception.
+
+### 3. What is the purpose of the catch code block? 
+
+To clean up any resources that are allocated in a try block.
+
+To handle the exception, log it, or ignore it.
+Correct. The catch code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it.
+
+
+To execute code that may cause an exception.
+### 4. What is the purpose of the finally block? 
+
+To execute code that may cause an exception.
+
+To handle the exception, log it, or ignore it.
+
+To clean up any resources that are allocated in a try block.
+Correct. The finally block is often used to clean up any resources that are allocated in a try block. The finally code block contains code that executes whether an exception occurs or not.
