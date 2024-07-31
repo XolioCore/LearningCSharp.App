@@ -57,7 +57,8 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine($"We have {sum} items in inventory.");
         }
 
-        void SortArray() {
+        void SortArray()
+        {
             string[] pallets = { "B14", "A11", "B12", "A13" };
 
             Console.WriteLine("Sorted...");
@@ -68,7 +69,8 @@ namespace NET.CSharp.Learning.Basics
             }
         }
 
-        void ReverseArray() {
+        void ReverseArray()
+        {
             string[] pallets = { "B14", "A11", "B12", "A13" };
 
             Console.WriteLine("Sorted...");
@@ -98,14 +100,16 @@ namespace NET.CSharp.Learning.Basics
 
         }
 
-        void StringJoinString() {
+        void StringJoinString()
+        {
             string value = "ABC123";
             char[] chars = value.ToCharArray();
             string joined = String.Join(",", chars);
             Console.WriteLine(joined);
         }
 
-        void SplitString() {
+        void SplitString()
+        {
 
             string value = "This is an example, using split, from and string, separated by commas";
             string[] arrayValues = value.Split(',');
@@ -115,7 +119,8 @@ namespace NET.CSharp.Learning.Basics
             }
         }
 
-        void ReverseWordFromText() {
+        void ReverseWordFromText()
+        {
 
             string pangram = "The quick brown fox jumps over the lazy dog";
 
@@ -138,7 +143,8 @@ namespace NET.CSharp.Learning.Basics
             Console.WriteLine(result);
         }
 
-        void SplitSortString() {
+        void SplitSortString()
+        {
             string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
             string[] items = orderStream.Split(',');
             Array.Sort(items);
@@ -159,7 +165,7 @@ namespace NET.CSharp.Learning.Basics
 
         void DetectsValuesStartingWithB()
         {
-            string[] names = { "Bob", "Maria", "Brenda"};
+            string[] names = { "Bob", "Maria", "Brenda" };
             foreach (string name in names)
             {
                 if (name.StartsWith("B"))
@@ -277,6 +283,53 @@ namespace NET.CSharp.Learning.Basics
             // required for running in VS Code (keeps the Output windows open to view results)
             Console.WriteLine("\n\rPress the Enter key to continue");
             Console.ReadLine();
+        }
+
+        void testDimensionalArray()
+        {
+            int target = 30;
+            int[] coins = new int[] { 5, 5, 50, 25, 25, 10, 5 };
+            int[,] result = TwoCoins(coins, target);
+
+            if (result.Length == 0)
+            {
+                Console.WriteLine("No two coins make change");
+            }
+            else
+            {
+                Console.WriteLine("Change found at positions:");
+                for (int i = 0; i < result.GetLength(0); i++)
+                {
+                    if (result[i, 0] == -1)
+                    {
+                        break;
+                    }
+                    Console.WriteLine($"{result[i, 0]},{result[i, 1]}");
+                }
+            }
+        }
+        int[,] TwoCoins(int[] coins, int target)
+        {
+            int[,] result = { { -1, -1 }, { -1, -1 }, { -1, -1 }, { -1, -1 }, { -1, -1 } };
+            int count = 0;
+
+            for (int curr = 0; curr < coins.Length; curr++)
+            {
+                for (int next = curr + 1; next < coins.Length; next++)
+                {
+                    if (coins[curr] + coins[next] == target)
+                    {
+                        result[count, 0] = curr;
+                        result[count, 1] = next;
+                        count++;
+                    }
+                    if (count == result.GetLength(0))
+                    {
+                        return result;
+                    }
+                }
+            }
+            return (count == 0) ? new int[0, 0] : result;
         }
     }
 }
