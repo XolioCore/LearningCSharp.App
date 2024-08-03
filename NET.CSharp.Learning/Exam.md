@@ -104,7 +104,7 @@ Whitespace should be used every two or three lines to separate code lines.
 
 Create a second foreach loop that iterates through the additional items.
 
-```**No changes are required to the foreach loop.**```
+**```No changes are required to the foreach loop.```**
 Correct! A foreach loop will iterate through all of the elements in an array.
 
 Place the original foreach loop inside the code block of a second foreach loop that iterates twice.
@@ -116,7 +116,8 @@ Each of the arrays containing samples can be processed by the outer loop, the in
 
 The order in which the arrays are processed doesn't matter since the application has to process all of the data.
 
-```**The outer loop must process the array containing locations, the inner loop must process the arrays containing samples.**```
+**```The outer loop must process the array containing locations, the inner loop must process the arrays containing samples.```**
+
 Correct! The outer loop will iterate through the locations. The code block of the outer loop will be used to select the samples array for each location, and then process the sample in the inner foreach loop.
 
 
@@ -126,7 +127,8 @@ The developer should insert a "marker value" into the population arrays. The "ma
 
 The developer should check the index number of the current array element inside the foreach code block. The application should stop adding values to the sum when the index number reaches 25.
 
-```**The developer should increment a counter inside the foreach code block. The application should stop adding values to the sum when the counter reaches 25.**```
+**```The developer should increment a counter inside the foreach code block. The application should stop adding values to the sum when the counter reaches 25.```**
+
 Correct! The developer should use a counter that increments inside the foreach loop.
 
 ### 17. A developer is working with two other developers to update a collection of applications. The developers will use code comments during the update process. Which of the following describes an appropriate use of code comments? 
@@ -136,7 +138,8 @@ Code comments should not be used to describe individual code lines. In this case
 
 When updates are made, the developers leave all existing code comments intact. New comments are added to indicate when old comments no longer apply.
 
-```**When updates are made, the developers summarize changes using block comments.**```
+**```When updates are made, the developers summarize changes using block comments.```**
+
 Correct! Using a block comment to summarize the changes implemented during an update is a good use of code comments. A single block comment at the top of the files that contain updates is often sufficient.
 
 ### 17. Which of the following is a list of valid comparison operators? 
@@ -145,14 +148,15 @@ Correct! Using a block comment to summarize the changes implemented during an up
 
 ==, <>, >, <, >=, and <=.
 
-```**==, !=, >, <, >=, and <=.**```
+**```==, !=, >, <, >=, and <=```**
+
 That's correct. ==, !=, >, <, >=, and <= are all valid comparison operators.
 
 ### 18. Which of the following code lines uses logical negation? 
 
 Console.WriteLine(myValue!= true);.
 
-```**Console.WriteLine(!myValue);.**```
+**```Console.WriteLine(!myValue);```**
 Correct! Adding the ! operator before a conditional expression is the correct way to implement logical negation.
 
 Console.WriteLine(myValue == false);.
@@ -161,7 +165,7 @@ Console.WriteLine(myValue == false);.
 
 (myValue1!= myValue2).
 
-```**(myValue1.Trim().ToLower() != myValue2.Trim().ToLower()).**```
+**```(myValue1.Trim().ToLower() != myValue2.Trim().ToLower()).```**
 Correct! This expression returns false since the two values are equal and the inequality operator is being used.
 
 (myValue1.Trim().ToLower() == myValue2.Trim().ToLower()).
@@ -171,20 +175,19 @@ Correct! This expression returns false since the two values are equal and the in
 int bonus = amount >= 100? 10: 5;.
 Correct! This code line shows the correct syntax for a conditional operator ?:.
 
-1. Which line of code uses logical negation? 
+### 20. Which line of code uses logical negation? 
 
-Console.WriteLine(!value);.
+**```Console.WriteLine(!value);```**
 Correct! Adding the ! operator (the "not-operator") before a conditional expression forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces true if the operand evaluates to false and false if the operand evaluates to true.
 
+Console.WriteLine(value != false);
 
-Console.WriteLine(value != false);.
+Console.WriteLine(a != b);
 
-Console.WriteLine(a != b);.
-2. Which of the following lines of code is a valid use of the conditional operator? 
+### 21. Which of the following lines of code is a valid use of the conditional operator? 
 
-int value = amount >= 10? 10: 20;.
+**```int value = amount >= 10? 10: 20;```**
 Correct! The syntax for a conditional operator is "? (value 1) : (value 2)".
-
 
 int value = amount >= 10: 10? 20;.
 
@@ -194,36 +197,36 @@ int bonus = amount >= 100: 10? 5;.
 
 int bonus = amount >= 100? 10, 5;.
 
-1. A developer writes some code that includes an if statement code block. They initialize one integer variable to a value of 5 above (outside) of the code block. They initialize a second integer variable to a value of 6 on the first line inside of the code block. The Boolean expression for the code block evaluates to true if the first integer variable has a value greater than 0. On the second line inside the code block, they assign the sum of the two values to the first variable. On the first line after the code block, they write code to display the value of the first integer. What is the result when the code statement used to display the first integer is executed? 
+### 22. A developer writes some code that includes an if statement code block. They initialize one integer variable to a value of 5 above (outside) of the code block. They initialize a second integer variable to a value of 6 on the first line inside of the code block. The Boolean expression for the code block evaluates to true if the first integer variable has a value greater than 0. On the second line inside the code block, they assign the sum of the two values to the first variable. On the first line after the code block, they write code to display the value of the first integer. What is the result when the code statement used to display the first integer is executed? 
 
-No error is generated and the integer value is displayed. The value displayed is the sum of the first and second integer.
+**```No error is generated and the integer value is displayed. The value displayed is the sum of the first and second integer.```**
 Correct! Since the first integer is initialized above the if statement code, it's still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer doesn't exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block.
-
 
 No error is generated and the integer value is displayed. The value displayed is the initialized value from above the code block.
 
 An error is generated because the first variable isn't in-scope after the code block.
 
-
-1. Which of the following statements is true about showing/removing the curly braces for code blocks associated with an if statement? 
+### 23. Which of the following statements is true about showing/removing the curly braces for code blocks associated with an if statement? 
 
 The curly braces can't be removed from the code block for else if and else statements.
 
 If the curly braces are removed from the code blocks of an if-elseif-else, the white space must also be removed.
 
-Always choose a style that improves readability.
+**```Always choose a style that improves readability.```**
+
 Correct! Code readability should always be a consideration when deciding whether to remove the curly braces from the code blocks associated with an if statement.
 
-2. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 1 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 8. The second code line inside the code block is used to assign the sum of the two integer values to the first variable. The first code line after the code block is used to display the value of the first integer variable. What is the result when the code is executed? 
+### 24. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 1 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 8. The second code line inside the code block is used to assign the sum of the two integer values to the first variable. The first code line after the code block is used to display the value of the first integer variable. What is the result when the code is executed? 
 
-No error is generated and the integer value 9 is displayed.
+**```No error is generated and the integer value 9 is displayed.```**
 Correct! Since the first integer is initialized above the if statement code, it's still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer doesn't exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block.
-
 
 No error is generated and the integer value 1 is displayed.
 
 An error is generated because the first variable is not in-scope after the code block.
-3. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 5 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 6. The first code line after the code block is used to add the second integer value to the value of the first integer. The second code line after the code block is used to display the value of the first integer. What is the result when they run the code? 
+
+
+### 25. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 5 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 6. The first code line after the code block is used to add the second integer value to the value of the first integer. The second code line after the code block is used to display the value of the first integer. What is the result when they run the code? 
 
 No error is generated and the integer value 11 is displayed.
 
