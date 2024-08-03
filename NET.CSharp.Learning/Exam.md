@@ -12,11 +12,11 @@ x < 5.
 
 x > 5.
 
-``` x == 5 ```
+**``` x == 5 ```**
 
 ### 4. Which of the choices below is not a valid operator in C#? 
 
-```%%.```
+**```%%.```**
 
 &&.
 
@@ -26,7 +26,7 @@ x > 5.
 
 The Boolean expression evaluated by an if statement is optional.
 
-``` An else statement can't be placed before an else if statement. ```
+**``` An else statement can't be placed before an else if statement. ```**
 
 The else statement is required when an if statement includes an else if.
 
@@ -34,7 +34,7 @@ The else statement is required when an if statement includes an else if.
 
 A string variable.
 
-``` A sequence of individual data elements accessible through a single variable name. ```
+**``` A sequence of individual data elements accessible through a single variable name. ```**
 
 A .NET Class Library.
 
@@ -44,20 +44,20 @@ string[] myarray = new string[3]; myarray = "test1"; myarray = "test2"; myarray 
 
 string[] myarray = string[3]; myarray[0] = test1; myarray[1] = test2; myarray[2] = test3;.
 
-``` int[] myarray = new int[3]; myarray[0] = 1; myarray[1] = 2; myarray[2] = 3; ```
+**``` int[] myarray = new int[3]; myarray[0] = 1; myarray[1] = 2; myarray[2] = 3; ```**
 
 
 ### 8. Which of the following can be used to access the third element in an array? 
 
 myArray[3].
 
-``` myArray[2] ```
+**``` myArray[2] ```**
 
 myArray{3}.
 
 ### 9. Which of the following choices describes the correct way to create a new integer array with three elements? 
 
-```int[] myArray = new int[3]; ```
+**```int[] myArray = new int[3]; ```**
 
 int[] myArray = new int[2];.
 
@@ -65,7 +65,7 @@ int myArray = new int[3];.
 
 ### 10. Which of the following foreach statements is syntactically correct? 
 
-``` foreach (int value in values) ```
+**``` foreach (int value in values) ```**
 
 foreach (int value of values).
 
@@ -78,7 +78,7 @@ my-string.
 
 initialMessage$.
 
-``` initialMessage ```
+**``` initialMessage ```**
 
 ### 12. Which of the following is a bad reason to use a code comment? 
 
