@@ -21,3 +21,32 @@ In the Create a new project dialog:
 ![image](https://github.com/user-attachments/assets/ad4a1e3b-3f81-4d58-99a9-eb2e4315bc91)
 ![image](https://github.com/user-attachments/assets/8b71e6f1-fdae-4eb1-874a-d3e4283bb420)
 
+### Create First Web API
+
+#### Create a new project
+- Open Visual Studio
+- From the File menu, select New > Project.
+- Enter Web API in the search box.
+- Select the ASP.NET Core Web API template and select Next.
+- In the Configure your new project dialog, name the project TodoApi and select Next.
+- In the Additional information dialog:
+- Confirm the Framework is .NET 8.0 (Long Term Support).
+- Confirm the checkbox for Use controllers(uncheck to use minimal APIs) is checked.
+- Confirm the checkbox for Enable OpenAPI support is checked.
+- Select Create.
+
+#### Add package to use Database on Memory
+A NuGet package must be added to support the database used in this example.
+
+- From the Tools menu, select NuGet Package Manager > Manage NuGet Packages for Solution.
+- Select the Browse tab.
+- Enter **Microsoft.EntityFrameworkCore.InMemory** in the search box, and then select Microsoft.EntityFrameworkCore.InMemory.
+- Select the Project checkbox in the right pane and then select Install.
+
+![image](https://github.com/user-attachments/assets/9a3800ea-2b37-4dd2-baae-474a5914232a)
+
+- Run the project
+![image](https://github.com/user-attachments/assets/12f86abb-7247-43ed-ae79-29bc98fd8786)
+
+![image](https://github.com/user-attachments/assets/69b7945d-2726-4d5d-bfe8-b55b314e75ef)
+
