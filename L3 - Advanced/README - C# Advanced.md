@@ -143,3 +143,32 @@ The ASP.NET Core templates for:
 - Controllers with views include [action] in the route template.
 - API controllers don't include [action] in the route template.
 
+
+#### Update the PostTodoItem create method
+Update the return statement in the PostTodoItem to use the nameof operator:
+
+```cs
+[HttpPost]
+public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
+{
+    _context.TodoItems.Add(todoItem);
+    await _context.SaveChangesAsync();
+
+    //    return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
+    return CreatedAtAction(nameof(GetTodoItem), new { id = todoItem.Id }, todoItem);
+}
+```
+- The preceding code is an HTTP POST method, as indicated by the [HttpPost] attribute. The method gets the value of the TodoItem from the body of the HTTP request.
+
+The CreatedAtAction method:
+
+- Returns an **HTTP 201 status** code if successful. HTTP 201 is the standard response for an HTTP POST method that creates a new resource on the server.
+- Adds a Location header to the response. The Location header specifies the URI of the newly created to-do item. For more information, see 10.2.2 201 Created.
+- References the GetTodoItem action to create the Location header's URI. The C# **nameof** keyword is used to avoid hard-coding the action name in the CreatedAtAction call.
+
+#### Try Post method
+- Run application
+
+![image](https://github.com/user-attachments/assets/ff7d4698-f7a6-4e5e-b882-845d65f10342)
+
+![image](https://github.com/user-attachments/assets/873f7486-a8f5-4d99-9ac8-5560d15f382f)
