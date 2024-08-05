@@ -1,0 +1,6 @@
+@RX.NET.CSharp.API.First.WebApi_HostAddress = http://localhost:5055
+
+GET {{RX.NET.CSharp.API.First.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
