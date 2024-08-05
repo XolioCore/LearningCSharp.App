@@ -143,6 +143,16 @@ The ASP.NET Core templates for:
 - Controllers with views include [action] in the route template.
 - API controllers don't include [action] in the route template.
 
+#### HTTP Methods
+
+- GET : To get items from DB
+    - GET /api/todoitems
+    - GET /api/todoitems/{id}
+- POST : To Insert an Item
+- PUT : To Update an Item
+- DELETE : To Delete an Item
+
+
 
 #### Update the PostTodoItem create method
 Update the return statement in the PostTodoItem to use the nameof operator:
@@ -172,3 +182,9 @@ The CreatedAtAction method:
 ![image](https://github.com/user-attachments/assets/ff7d4698-f7a6-4e5e-b882-845d65f10342)
 
 ![image](https://github.com/user-attachments/assets/873f7486-a8f5-4d99-9ac8-5560d15f382f)
+
+#### Try Get Methods with Postman
+![image](https://github.com/user-attachments/assets/e65c8f7d-4044-4f77-9212-c9d5a0f5fdf4)
+
+#### Try Get Methods with WEb Browser
+![image](https://github.com/user-attachments/assets/be44e470-4f49-44d7-a9a2-4f76175b3f18)
