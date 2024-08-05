@@ -186,5 +186,22 @@ The CreatedAtAction method:
 #### Try Get Methods with Postman
 ![image](https://github.com/user-attachments/assets/e65c8f7d-4044-4f77-9212-c9d5a0f5fdf4)
 
+![image](https://github.com/user-attachments/assets/d78f11d6-0511-4b7c-b895-336c83f08fa9)
+
 #### Try Get Methods with WEb Browser
 ![image](https://github.com/user-attachments/assets/be44e470-4f49-44d7-a9a2-4f76175b3f18)
+
+![image](https://github.com/user-attachments/assets/ae61a984-4779-4cca-a3f5-e3d32a7d78a1)
+
+#### Using DTOs
+
+**Prevent over-posting**
+Currently the sample app exposes the entire TodoItem object. Production apps typically limit the data that's input and returned using a subset of the model. There are multiple reasons behind this, and security is a major one. The subset of a model is usually referred to as a Data Transfer Object (DTO), input model, or view model. DTO is used in this tutorial.
+
+A **DTO** may be used to:
+
+- Prevent over-posting.
+- Hide properties that clients are not supposed to view.
+- Omit some properties in order to reduce payload size.
+- Flatten object graphs that contain nested objects. Flattened object graphs can be more convenient for clients.
+
