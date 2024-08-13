@@ -49,7 +49,7 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 6. Notice that installing the C# Dev Kit installs the following extensions:
    - .NET Install Tool. This extension installs and manages different versions of the .NET SDK and Runtime.
    - C# - Base language support for C#.
-   - C# Dev Kit - Official C# extension from Microsof
+   - C# Dev Kit - Official C# extension from Microsoft
 
 ### Install IntelliCode for C#
 
@@ -59,7 +59,8 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
    
 ![image](https://github.com/user-attachments/assets/2d562b95-23ac-44a2-b751-6ebee8f98dd9)
 
-5. Select Install.
+4. Select Install.
+
 ### Verify Dotnet version
 
 1. Open a new Terminal
@@ -70,7 +71,7 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 1. Run command ```dotnet new console -o path/projectname```
 ![image](https://github.com/user-attachments/assets/aa991c31-70e5-4d9a-8eef-2631cc2db8aa)
 
-2. Implemente changes and save.
+2. Implement changes and save.
 3. Build project ```$dotnet build```
 4. Run the project ```$dotnet run```
 
@@ -84,8 +85,11 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 - However, when you need to call stateful methods, you must first create an instance of the class so that the method can access state.
 
 ## Methods
-- Methods might accept no parameters or multiple parameters, depending on how they were designed and implemented. When passing in multiple parameters, separate them with a , symbol.
-- Method parameters are variables used inside the method. The method definition specifies the names and types of any parameters that are required. When a caller invokes the method, the calling statement provides concrete values, called arguments, for each parameter.
+- Methods might accept no parameters or multiple parameters, depending on how they were designed and implemented.
+- When passing in multiple parameters, separate them with a , symbol.
+- Method parameters are variables used inside the method.
+- The method definition specifies the names and types of any parameters that are required.
+- When a caller invokes the method, the calling statement provides concrete values, called arguments, for each parameter.
 - Methods might return a value when they complete their task, or they might return nothing (void).
 - Overloaded methods support several implementations of the method, each with a unique method signature (the number of parameters and the data type of each parameter).
 - IntelliSense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their parameters.
@@ -116,11 +120,13 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 
    Console.WriteLine($"Reassign First: {orderIDs[0]}");
 ```
+
 ### Initialize an array
 
 ```c
    string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
 ```
+
 ### Lenght of an array
 ```cs
    string[] orderIDs = { "A001", "B002", "C003" };
@@ -145,7 +151,9 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
        Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
    }
    Console.WriteLine($"We have {sum} items in inventory.");
+}
 ```
+
 ## Variables
 
 ### Variable name rules
