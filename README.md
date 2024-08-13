@@ -151,7 +151,7 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
        Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
    }
    Console.WriteLine($"We have {sum} items in inventory.");
-}
+
 ```
 
 ## Variables
@@ -166,10 +166,10 @@ There are some variable naming rules that are enforced by the C# compiler.
 
 ### Variable name conventions
 
-- Variable names should use camel case, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word. For example: string thisIsCamelCase;.
-- Variable names should be descriptive and meaningful in your application. 
-- Variable names should be one or more entire words appended together. 
-- Variable names shouldn't include the data type of the variable.
+- Variable names should use **camel case**, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word. For example: string thisIsCamelCase;.
+- Variable names should be **descriptive** and meaningful in your application. 
+- Variable names should be **one or more entire words** appended together. 
+- Variable names **shouldn't include the data type** of the variable.
 
 ## Comments
 
