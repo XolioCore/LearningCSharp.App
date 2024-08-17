@@ -8,96 +8,96 @@ Code that returns either true or false.
 
 ### 3. Given that int x = 5, which of the following Boolean expressions is valid and evaluates to true? 
 
-x < 5.
+a) x < 5
 
-x > 5.
+b) x > 5
 
-**``` x == 5 ```**
+c) **``` x == 5 ```**
 
 ### 4. Which of the choices below is not a valid operator in C#? 
 
-**```%%```**
+a) **```%%```**
 
-&&
+b) &&
 
-||
+c) ||
 
 ### 5. The following answer choices describe if statement syntax. Which of the descriptions is correct? 
 
-The Boolean expression evaluated by an if statement is optional.
+a) The Boolean expression evaluated by an if statement is optional.
 
-**``` An else statement can't be placed before an else if statement. ```**
+b) **``` An else statement can't be placed before an else if statement. ```**
 
-The else statement is required when an if statement includes an else if.
+c) The else statement is required when an if statement includes an else if.
 
 ### 6. What is an array? 
 
-A string variable.
+a) A string variable.
 
-**``` A sequence of individual data elements accessible through a single variable name. ```**
+b) **``` A sequence of individual data elements accessible through a single variable name. ```**
 
-A .NET Class Library.
+c) A .NET Class Library.
 
 ### 7. Which of these is a correct example of creating an array and initializing it? 
 
-string[] myarray = new string[3]; myarray = "test1"; myarray = "test2"; myarray = "test3";.
+a) string[] myarray = new string[3]; myarray = "test1"; myarray = "test2"; myarray = "test3";.
 
-string[] myarray = string[3]; myarray[0] = test1; myarray[1] = test2; myarray[2] = test3;.
+b) string[] myarray = string[3]; myarray[0] = test1; myarray[1] = test2; myarray[2] = test3;.
 
-**``` int[] myarray = new int[3]; myarray[0] = 1; myarray[1] = 2; myarray[2] = 3; ```**
+c) **``` int[] myarray = new int[3]; myarray[0] = 1; myarray[1] = 2; myarray[2] = 3; ```**
 
 
 ### 8. Which of the following can be used to access the third element in an array? 
 
-myArray[3].
+a) myArray[3]
 
-**``` myArray[2] ```**
+b) **``` myArray[2] ```**
 
-myArray{3}.
+c) myArray{3}
 
 ### 9. Which of the following choices describes the correct way to create a new integer array with three elements? 
 
-**```int[] myArray = new int[3]; ```**
+a) **```int[] myArray = new int[3]; ```**
 
-int[] myArray = new int[2];.
+b) int[] myArray = new int[2];.
 
-int myArray = new int[3];.
+c) int myArray = new int[3];.
 
 
 ### 10. Which of the following foreach statements is syntactically correct? 
 
-**``` foreach (int value in values) ```**
+a) **``` foreach (int value in values) ```**
 
-foreach (int value of values).
+b) foreach (int value of values).
 
-foreach (int value with values).
+c) foreach (int value with values).
 
 
 ### 11. Which of the following demonstrates recommended guidelines for naming a variable? 
 
-my-string.
+a) my-string.
 
-initialMessage$.
+b) initialMessage$.
 
-**``` initialMessage ```**
+c) **``` initialMessage ```**
 
 
 ### 12. Which of the following is a bad reason to use a code comment? 
 
-To describe the high-level intent of the code.
+a) To describe the high-level intent of the code.
 
-**``` To explain how a new C# keyword works. ```**
+b) **``` To explain how a new C# keyword works. ```**
 
-To temporarily comment out a line of code while evaluating a feature in a different way.
+c) To temporarily comment out a line of code while evaluating a feature in a different way.
 
 
 ### 13. Which of the following statements about using whitespace in code is true? 
 
-Reducing the amount of whitespace will improve code performance (execution speed).
+a) Reducing the amount of whitespace will improve code performance (execution speed).
 
-Whitespace should be used every two or three lines to separate code lines.
+b) Whitespace should be used every two or three lines to separate code lines.
 
-**``` Whitespace should be used judiciously to improve the readability of your code. ```**
+c) **``` Whitespace should be used judiciously to improve the readability of your code. ```**
 
 
 ### 14. A developer writes an application that uses a foreach loop to iterate through an array containing 20 elements. After the application is complete, the developer learns that the array must be updated to include 40 elements. The application needs to examine all 40 array elements. Which of the following items describes the required code update? 
