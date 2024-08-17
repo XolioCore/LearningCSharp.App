@@ -16,11 +16,11 @@ x > 5.
 
 ### 4. Which of the choices below is not a valid operator in C#? 
 
-**```%%.```**
+**```%%```**
 
-&&.
+&&
 
-||.
+||
 
 ### 5. The following answer choices describe if statement syntax. Which of the descriptions is correct? 
 
