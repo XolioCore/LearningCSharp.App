@@ -261,34 +261,32 @@ The colon at the end of the case label is optional.
 
 ### 30. What is the purpose of a default case in a switch statement? 
 
-It's used to specify the condition for the switch statement.
+a) It's used to specify the condition for the switch statement.
 
-It's used to end the switch statement.
+b) It's used to end the switch statement.
 
-**```It's used to execute a block of code if no case matches the expression.```**
+c) **```It's used to execute a block of code if no case matches the expression.```**
 Correct! The default case executes when no other case matches the switch expression.
 
-2. What happens if a break statement (or alternative keyword that prevents "fall-through") is omitted in a switch case? 
+### 31. What happens if a break statement (or alternative keyword that prevents "fall-through") is omitted in a switch case? 
 
-The default case will execute.
-Incorrect. The default case won't execute if a break statement is omitted.
+a) The default case will execute.
 
+b) The impacted case sections will be removed by the compiler.
 
-The impacted case sections will be removed by the compiler.
-
-The compiler will generate an error.
+c) **```The compiler will generate an error.```**
 Correct! Only one switch section is allowed to be executed. If you forget the break keyword (or, optionally, the return keyword) the compiler will generate an error.
 
-1. Which of the following for statements is correct? 
+### 32. Which of the following for statements is correct? 
 
-for (int x = 20: x < 80: x++)
+a) for (int x = 20: x < 80: x++)
 
-for (int j = 0; j < 80; j + 1)
+b) for (int j = 0; j < 80; j + 1)
 
-for (int counter = 20; counter < 80; counter++)
+c) **```for (int counter = 20; counter < 80; counter++)```**
 Correct!
 
-2. Which of the following statements should be used to exit out of a for loop before the iteration has completed? 
+### 33. Which of the following statements should be used to exit out of a for loop before the iteration has completed? 
 
 exit;
 
@@ -298,7 +296,7 @@ Correct! The break keyword can be used to jump out of a for loop when a desired 
 return;
 
 
-1. Which of the following correctly describes a behavior of either a do-while or while iterative statement? 
+### 34. Which of the following correctly describes a behavior of either a do-while or while iterative statement? 
 
 A do-while statement executes a code block zero or more times.
 
@@ -307,7 +305,7 @@ A while statement executes a code block at least once.
 A do-while statement executes a code block at least once.
 Correct! The do-while iterates through a code block at least one time. Code execution exits the iteration loop once the while expression at the end of the code block evaluates to true.
 
-2. A developer needs to capture user input inside a loop. The user enters the keyboard combination ctrl + Esc to exit the iteration when they're done entering information. Which is the best iteration statement for this purpose? 
+### 35. A developer needs to capture user input inside a loop. The user enters the keyboard combination ctrl + Esc to exit the iteration when they're done entering information. Which is the best iteration statement for this purpose? 
 
 while
 
