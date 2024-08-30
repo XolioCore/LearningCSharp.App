@@ -1,12 +1,12 @@
 # Exam preparation
 
-### 1. What is a code block? 
+#### 1. What is a code block? 
 Lines of code that should be treated as a single unit.
 
-### 2. What is a Boolean statement or expression? 
+#### 2. What is a Boolean statement or expression? 
 Code that returns either true or false.
 
-### 3. Given that int x = 5, which of the following Boolean expressions is valid and evaluates to true? 
+#### 3. Given that int x = 5, which of the following Boolean expressions is valid and evaluates to true? 
 
 a) x < 5
 
