@@ -147,9 +147,9 @@ a) ==, ~=, >, <, >=, and <=.
 
 b) ==, <>, >, <, >=, and <=.
 
-**```==, !=, >, <, >=, and <=```**
+c) **```==, !=, >, <, >=, and <=```**
 
-That's correct. ==, !=, >, <, >=, and <= are all valid comparison operators.
+_That's correct. ==, !=, >, <, >=, and <= are all valid comparison operators._
 
 #### 18. Which of the following code lines uses logical negation? 
 
@@ -158,21 +158,21 @@ a) Console.WriteLine(myValue!= true);.
 b) **```Console.WriteLine(!myValue);```**
 Correct! Adding the ! operator before a conditional expression is the correct way to implement logical negation.
 
-Console.WriteLine(myValue == false);.
+c) Console.WriteLine(myValue == false);.
 
 #### 19. An application contains two string variables named myValue1 and myValue2. The user enters the following two values for these variables: "Y " and " y". Which of the following expressions return false? 
 
 a) (myValue1!= myValue2).
 
 b) **```(myValue1.Trim().ToLower() != myValue2.Trim().ToLower()).```**
-Correct! This expression returns false since the two values are equal and the inequality operator is being used.
+_Correct! This expression returns false since the two values are equal and the inequality operator is being used._
 
-(myValue1.Trim().ToLower() == myValue2.Trim().ToLower()).
+c) (myValue1.Trim().ToLower() == myValue2.Trim().ToLower()).
 
 #### 20. Which of the following lines of code is a valid use of the conditional operator? 
 
 a) int bonus = amount >= 100? 10: 5;.
-Correct! This code line shows the correct syntax for a conditional operator ?:.
+_Correct! This code line shows the correct syntax for a conditional operator ?:._
 
 #### 21. Which line of code uses logical negation? 
 
@@ -181,29 +181,29 @@ Correct! Adding the ! operator (the "not-operator") before a conditional express
 
 b) Console.WriteLine(value != false);
 
-Console.WriteLine(a != b);
+c) Console.WriteLine(a != b);
 
 #### 22. Which of the following lines of code is a valid use of the conditional operator? 
 
 a) **```int value = amount >= 10? 10: 20;```**
-Correct! The syntax for a conditional operator is "? (value 1) : (value 2)".
+_Correct! The syntax for a conditional operator is "? (value 1) : (value 2)"._
 
 b) int value = amount >= 10: 10? 20;.
 
-int value = amount >= 10? 10| 20;.
+c) int value = amount >= 10? 10| 20;.
 
-int bonus = amount >= 100: 10? 5;.
+d) int bonus = amount >= 100: 10? 5;.
 
-int bonus = amount >= 100? 10, 5;.
+e) int bonus = amount >= 100? 10, 5;.
 
 #### 23. A developer writes some code that includes an if statement code block. They initialize one integer variable to a value of 5 above (outside) of the code block. They initialize a second integer variable to a value of 6 on the first line inside of the code block. The Boolean expression for the code block evaluates to true if the first integer variable has a value greater than 0. On the second line inside the code block, they assign the sum of the two values to the first variable. On the first line after the code block, they write code to display the value of the first integer. What is the result when the code statement used to display the first integer is executed? 
 
 a) **```No error is generated and the integer value is displayed. The value displayed is the sum of the first and second integer.```**
-Correct! Since the first integer is initialized above the if statement code, it's still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer doesn't exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block.
+_Correct! Since the first integer is initialized above the if statement code, it's still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer doesn't exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block._
 
 b) No error is generated and the integer value is displayed. The value displayed is the initialized value from above the code block.
 
-An error is generated because the first variable isn't in-scope after the code block.
+c) An error is generated because the first variable isn't in-scope after the code block.
 
 #### 24. Which of the following statements is true about showing/removing the curly braces for code blocks associated with an if statement? 
 
@@ -211,9 +211,9 @@ a) The curly braces can't be removed from the code block for else if and else st
 
 b) If the curly braces are removed from the code blocks of an if-elseif-else, the white space must also be removed.
 
-**```Always choose a style that improves readability.```**
+c) **```Always choose a style that improves readability.```**
 
-Correct! Code readability should always be a consideration when deciding whether to remove the curly braces from the code blocks associated with an if statement.
+_Correct! Code readability should always be a consideration when deciding whether to remove the curly braces from the code blocks associated with an if statement._
 
 #### 25. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 1 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 8. The second code line inside the code block is used to assign the sum of the two integer values to the first variable. The first code line after the code block is used to display the value of the first integer variable. What is the result when the code is executed? 
 
@@ -222,12 +222,11 @@ Correct! Since the first integer is initialized above the if statement code, it'
 
 b) No error is generated and the integer value 1 is displayed.
 
-An error is generated because the first variable is not in-scope after the code block.
-
+c) An error is generated because the first variable is not in-scope after the code block.
 
 #### 26. A developer writes some code that includes an if statement code block. They initialize a first integer variable to a value of 5 above (outside) of the code block. The Boolean expression for the if statement code block evaluates to true if the first integer variable has a value greater than 0. The first code line inside of the code block is used to initialize a second integer variable to a value of 6. The first code line after the code block is used to add the second integer value to the value of the first integer. The second code line after the code block is used to display the value of the first integer. What is the result when they run the code? 
 
-No error is generated and the integer value 11 is displayed.
+a) No error is generated and the integer value 11 is displayed.
 
 #### 27. A developer writes the code to implement a switch-case construct. What is the purpose of the break keyword? 
 
@@ -236,16 +235,16 @@ a) The break keyword tells the runtime to continue evaluating other cases in the
 b) **```The break keyword tells the runtime to stop evaluating case patterns and prevents execution of other cases in the switch construct.```**
 Correct! The break keyword redirects code execution and prevents one switch section continuing into the next section.
 
-The break keyword tells the runtime to exit the application.
+c) The break keyword tells the runtime to exit the application.
 
 #### 28. A developer writes the code to implement a switch-case construct that evaluates a variable against many possible matching values. They include the default keyword as part of their switch-case construct. What is the purpose of the default keyword? 
 
 a) The default keyword supplies the default value for the variable if the variable hasn't been initialized.
 
 b) **```The default keyword acts as the matching value when none of the supplied case values is a match.```**
-Correct. If there's no matching case value labels, the optional default label is used as the matching value.
+_Correct. If there's no matching case value labels, the optional default label is used as the matching value._
 
-The default keyword supplies a default actions code block that is always executed regardless of the matching case value
+c) The default keyword supplies a default actions code block that is always executed regardless of the matching case value
 
 
 #### 29. Which of the following statements about the switch-case construct is true? 
@@ -255,7 +254,7 @@ Correct!
 
 b) A switch construct must include a default switch section.
 
-The colon at the end of the case label is optional.
+c) The colon at the end of the case label is optional.
 
 
 #### 30. What is the purpose of a default case in a switch statement? 
@@ -265,7 +264,7 @@ a) It's used to specify the condition for the switch statement.
 b) It's used to end the switch statement.
 
 c) **```It's used to execute a block of code if no case matches the expression.```**
-Correct! The default case executes when no other case matches the switch expression.
+_Correct! The default case executes when no other case matches the switch expression._
 
 #### 31. What happens if a break statement (or alternative keyword that prevents "fall-through") is omitted in a switch case? 
 
