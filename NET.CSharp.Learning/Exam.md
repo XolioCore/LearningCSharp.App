@@ -348,16 +348,15 @@ a) for statements do a better job of examining each array item separately.
 
 b) foreach statements do a better job of examining each array item separately.
 
-for statements enable a developer to treat array dimensions separately.
+c) **```for statements enable a developer to treat array dimensions separately.```**
 _Correct! When their code is processing the contents of a multidimensional array, a developer often wants to iterate through the array dimensions separately. The for statement provides better support for processing array dimensions separately._
 
 #### 40. Why is it important to scope a variable at its lowest necessary level? 
 
 a) It ensures that a variable that's declared outside of a code block, can be accessed inside the code block before it's been assigned a value.
 
-b) It ensures that application resources and the security footprint are kept small.
-
-Correct. Keeping variables scoped at the lowest necessary level enables better resource management and helps to minimize the attack profile of the application.
+b) **```It ensures that application resources and the security footprint are kept small.```**
+_Correct. Keeping variables scoped at the lowest necessary level enables better resource management and helps to minimize the attack profile of the application._
 
 It ensures that a variable can be accessed within the lowest level code branches of an application.
 
@@ -365,19 +364,19 @@ It ensures that a variable can be accessed within the lowest level code branches
 
 a) One or more suggestions for how to fix any syntax issues detected.
 
-b) The line number and information about what caused the error.
-Correct. Error and Warning messages include a description of the issue and the line number where it occurs.
+b) **```The line number and information about what caused the error.```**
+_Correct. Error and Warning messages include a description of the issue and the line number where it occurs._
 
-Links to help documentation.
+c) Links to help documentation.
 
 #### 42. A developer needs to create an iteration statement. Under what condition is a while statement a better choice than a do statement? 
 
 a) When the expression values evaluated by the iteration statement are unknown prior to the iteration code block.
 
-b) When the expression values evaluated by the iteration statement are known prior to the iteration code block.
-Correct. When the code is able to evaluate the loop expression prior to the loop, a while statement allows the code to implement zero iterations.
-
-When the developer creates nested do or while loops.
+b) **```When the expression values evaluated by the iteration statement are known prior to the iteration code block.```**
+_Correct. When the code is able to evaluate the loop expression prior to the loop, a while statement allows the code to implement zero iterations.
+_
+c) When the developer creates nested do or while loops.
 
 #### 43. Which choice best represents how bits represent on and off? 
 
@@ -385,38 +384,35 @@ a) Bits are represented using "x" or "o" character.
 
 b) Bits are represented using "+bit" or "-bit" notation.
 
-Bits are binary and represented using "1" or "0" digit.
-Correct. Bits are represented using the "1" or "0" digit.
-
+c) **```Bits are binary and represented using "1" or "0" digit.```**
+_Correct. Bits are represented using the "1" or "0" digit._
 
 #### 44. Which data type has a range of whole numbers between 0 and 65535 in C# code? 
 
 a) Sbyte
 
-b) Ushort
-Correct, ushort represents values 0 to 65535.
+b) **```Ushort```**
+_Correct, ushort represents values 0 to 65535._
 
-byte
+c) byte
 
 #### 45. Which is the best data type to use to process banking deposits? 
 
-a) Decimal
-Correct. Decimal, with ~28-29 digits of precision, has the precision required for many financial applications.
+a) **```Decimal
+_Correct. Decimal, with ~28-29 digits of precision, has the precision required for many financial applications._
 
 b) Float
 
-Double
-
+c) Double
 
 #### 46. In C#, when the new keyword is used to create an instance of a class, where is the memory allocated? 
 
 a) Stack
 
-b) Heap
-Correct. Instances of classes are allocated on the heap when created with the new keyword.
+b) **```Heap```**
+_Correct. Instances of classes are allocated on the heap when created with the new keyword._
 
-Variable
-
+c) Variable
 
 #### 47. A piece of code must store whole numeric values between negative and positive 1,000,000. Which is the best data type to be used? 
 
@@ -424,43 +420,44 @@ a) float
 
 b) double
 
-int
-Correct. While float or double would work, their extra precision after the decimal doesn't fit the exact requirement of this scenario.
+c) **```int```**
+_Correct. While float or double would work, their extra precision after the decimal doesn't fit the exact requirement of this scenario._
 
 #### 48. The code for a game needs to store lots of fractional values representing x, y, and z positions in a large 3D space. It will likely need to perform physics calculations for trajectories and so on. Absolute precision isn't required, but it's important that the program runs as efficiently as possible. Which data type is best? 
 
-a) float
-Correct. Unlike int, float can store fractional numbers, and unlike decimal, float doesn't require extra memory to store extra precision that isn't needed in this scenario.
+a) **```float```**
+_Correct. Unlike int, float can store fractional numbers, and unlike decimal, float doesn't require extra memory to store extra precision that isn't needed in this scenario._
 
 b) decimal
-Incorrect. While decimal can store large fractional numbers, they require more memory to store all the precision. Furthermore, they're less efficient than float or double. Finally, they can return precise calculated values, but the question says that's not a priority in this situation.
 
-int
+c) int
+
 #### 49. Which of the following statements is true? 
 
 a) Reference types are stored in the stack.
 
 b) Value types can only store numbers.
 
-Use the new operator to create a new instance of a reference type and return its address to the variable.
-Correct. Use the new operator to create a new instance of a reference type and return its address to the variable.
+c) **```Use the new operator to create a new instance of a reference type and return its address to the variable.```**
+_Correct. Use the new operator to create a new instance of a reference type and return its address to the variable._
 
 #### 50. Which is the best technique to convert a decimal type to an int type in C#? 
 
-a) Cast
-Correct. decimal to int is a narrowing conversion so cast is the best answer.
+a) **```Cast```**
+_Correct. decimal to int is a narrowing conversion so cast is the best answer._
 
 b) Narrowing
 
-Implicit conversion
+c) Implicit conversion
+
 #### 51. Which of the following conversion rounds the value (versus truncate)? 
 
 a) int cost = (int)3.75m;
 
-b) int cost = Convert.ToInt32(3.75m);
-Correct. Convert.ToInt32() rounds values with fractional precision.
+b) **```int cost = Convert.ToInt32(3.75m);```**
+_Correct. Convert.ToInt32() rounds values with fractional precision._
 
-uint cost = (uint)3.75m;
+c) uint cost = (uint)3.75m;
 
 #### 52. Which technique should be used to change myInput, a string value "2.71828", into a decimal variable myInputDecimal? 
 
@@ -468,17 +465,17 @@ a) decimal myInputDecimal = (decimal)(myInput);
 
 b) decimal myInputDecimal = myInput + 0;
 
-decimal.TryParse(myInput, out myInputDecimal);
-Correct. Using TryParse (or Parse()) is a valid technique.
+c) **```decimal.TryParse(myInput, out myInputDecimal);```**
+_Correct. Using TryParse (or Parse()) is a valid technique._
 
 #### 53. Consider the C# code bool success = decimal.TryParse(input, out decimal number);. Which best describes the return type of decimal.TryParse()? 
 
 a) decimal
 
-b) bool
-Correct. TryParse() returns a bool.
+b) **```bool```**
+_Correct. TryParse() returns a bool._
 
-out
+c) out
 
 #### 54. Which technique results in an error when used to convert a string value 4.123456789 into a decimal? 
 
@@ -486,45 +483,44 @@ a) Convert.ToDecimal()
 
 b) decimal.TryParse()
 
-(decimal)
-Correct. It isn't possible to directly cast a string into a decimal and results in an error.
+c) **```(decimal)```**
+_Correct. It isn't possible to directly cast a string into a decimal and results in an error._
 
 #### 55. What type of action is being performed when changing a float into an int? 
 
-a) A narrowing conversion.
-Correct. Changing a float into an int is a narrowing conversion, because float can store more precision data compared to int.
+a) **```A narrowing conversion.```**
+_Correct. Changing a float into an int is a narrowing conversion, because float can store more precision data compared to int._
 
 b) A widening conversion.
 
-An illegal conversion.
+c) An illegal conversion.
 
 #### 56. Which best describes the code Array.Sort(pallets); where pallets is a string array? 
 
 a) Sort represents a cast operation
 
-b) Sort is an Array method.
-Correct. Sort is an Array method.
+b) **```Sort is an Array method.```**
+_Correct. Sort is an Array method._
 
-Sort is used to sort array amount of precision.
+c) Sort is used to sort array amount of precision.
 
 #### 57. What best describes the code Array.Clear(pallets, 0, 2); where pallets is a string array? 
 
-a) Array.Clear(pallets, 0, 2); removes the data from 2 array elements starting from item 0.
-Correct. Clear is a method of arrays that removes (replaces with Null) specific elements in an array.
+a) **```Array.Clear(pallets, 0, 2); removes the data from 2 array elements starting from item 0.```**
+_Correct. Clear is a method of arrays that removes (replaces with Null) specific elements in an array._
 
 b) Array.Clear(pallets, 0, 2); removes the data from array element locations pallets[0] and pallets[2].
 
-Array.Clear(pallets, 0, 2); removes array elements that are equal to 0 or 2.
+c) Array.Clear(pallets, 0, 2); removes array elements that are equal to 0 or 2.
 
 #### 58. String.Join("-", myArray); is an example of a Join. Which explanation best fits this example? 
 
 a) Constructs a character array from items in myArray connected with , (commas).
 
-b) Constructs a string from items in myArray connected with - (dashes).
-Correct. String.Join constructs strings from the elements of myArray).
+b) **```Constructs a string from items in myArray connected with - (dashes).```**
+_Correct. String.Join constructs strings from the elements of myArray)._
 
-Constructs a string named myArray connected with - (dashes).
-
+c) Constructs a string named myArray connected with - (dashes).
 
 #### 59. Which method changes the order of items in an string array? 
 
@@ -532,8 +528,8 @@ a) myArray.Resize()
 
 b) myArray.Clear()
 
-Array.Sort()
-Correct. Array.Sort() places string array items in ascending order.
+c) **```Array.Sort()```**
+_Correct. Array.Sort() places string array items in ascending order._
 
 #### 60. What is null? 
 
@@ -541,8 +537,8 @@ a) The same as an empty string.
 
 b) The same as the value zero.
 
-A value that indicates a variable points to nothing in memory.
-Correct. Null isn't the same as an empty string or the value zero.
+c) **```A value that indicates a variable points to nothing in memory.```**
+_Correct. Null isn't the same as an empty string or the value zero._
 
 #### 61. Which is the output of Console.WriteLine($"Tax rate: {tax:P1}");, where tax is defined by decimal tax =.12051 m;? 
 
@@ -550,18 +546,17 @@ a) Tax rate: 12.05%
 
 b) Tax rate: 12.10%
 
-Tax rate: 12.1%
-Correct. tax: P1 rounds the percentage to a single decimal place.
+c) **```Tax rate: 12.1%```**
+_Correct. tax: P1 rounds the percentage to a single decimal place._
 
 #### 62. Given string myWords = "Learning C#", what is the best output description for Console.WriteLine(myWords.PadLeft(12));? 
 
-a) One space is added to the start of the string.
-Correct. myWords is 11 characters long, adding on space completes the padding to 12.
+a) **```One space is added to the start of the string.```**
+_Correct. myWords is 11 characters long, adding on space completes the padding to 12._
 
 b) Four spaces are added to the start of the string.
 
-12 spaces are added to the start of the string.
-Incorrect. myWords is 11 characters long, with 12 spaces added the padding goes to 23.
+c) 12 spaces are added to the start of the string.
 
 #### 63. For the C# code Console.WriteLine("C110".PadLeft(6, '0'));, which is the expected output? 
 
@@ -569,8 +564,8 @@ a) C11000
 
 b) C110000000
 
-00C110
-Correct. .PadLeft(6, '0') appends zeros to the left side of a string until the string is six characters long.
+c) **```00C110```**
+_Correct. .PadLeft(6, '0') appends zeros to the left side of a string until the string is six characters long._
 
 #### 64. Which format specifier presents a decimal value with the following format to an en-US audience: 12,345.67 
 
@@ -578,31 +573,31 @@ a) 0:C
 
 b) 0:H
 
-0:N2
-Correct. N2 is the correct format specifier.
+c) **```0:N2```**
+_Correct. N2 is the correct format specifier._
 
 #### 65. Which character must be used as a directive to perform string interpolation? 
 
-a) $
-Correct. The $ directive is used to perform string interpolation.
+a) **```$
+_Correct. The $ directive is used to perform string interpolation._
 
 b) @
 
-%
+c) %
 
 #### 66. What is the return value of myString.IndexOf('C'); where string myString = "C# Time";? 
 
-a) 0
-Correct. "C" is the first item in myString and matches at position 0.
+a) **```0```**
+_Correct. "C" is the first item in myString and matches at position 0._
 
 b) 1
 
--1
+c) -1
 
 #### 67. What method should be used to search for the first occurrence of a search term in a long string? 
 
-a) IndexOfAny()
-Correct. IndexOfAny() returns the first position of an array of char that occurs inside of another string.
+a) **```IndexOfAny()```**
+_Correct. IndexOfAny() returns the first position of an array of char that occurs inside of another string._
 
 
 #### 68. If the code message = message.Replace("B", "D"); is run, where string message = "Big Dog";, what is the new value of message? 
@@ -611,17 +606,17 @@ a) "Big Dog"
 
 b) "Big Bog"
 
-"Dig Dog"
-Correct. "B" is replaced with "D".
+c) **```"Dig Dog"```**
+_Correct. "B" is replaced with "D"._
 
 #### 69. Which method finds the next index of either the - char, the = char, or the _ char? 
 
-a) IndexOfAny()
-Correct. Use IndexOfAny() to retrieve the next index for any of several chars in a string.
+a) **```IndexOfAny()```**
+_Correct. Use IndexOfAny() to retrieve the next index for any of several chars in a string._
 
 b) Remove()
 
-IndexOf()
+c) IndexOf()
 
 #### 70. What is a constant variable? 
 
@@ -629,42 +624,42 @@ a) A magic string or number.
 
 b) A variable whose name must match its value.
 
-A value that once initialized can never be changed.
-Correct. A constant variable can never be changed, once initialized.
+c) **```A value that once initialized can never be changed.```**
+_Correct. A constant variable can never be changed, once initialized._
 
 #### 71. Which choice best describes the purpose of TryParse()? 
 
 a) To split sentences into words stored in an array.
 
-b) To safely test a cast operation.
+b) **```To safely test a cast operation.```**
 
-To find a substring in a larger string.
+c) To find a substring in a larger string.
+
 #### 72. For the code decimal.TryParse(numberString, out myConvert)) when the type of numberString is a String. Which best describes the value type for myConvert when the TryParse() is successful? 
 
 a) A string representing numeric digits.
 
 b) A Boolean value.
 
-A decimal
+c) **```A decimal```**
 
 #### 73. Suppose there's a method named ConvertCurrency. Which of the following lines of code is a valid method signature? 
 
 a) ConvertCurrency();
 
 b) ConvertCurrency() { }
-This answer is incorrect. A return type must be declared before the method name.
 
-void ConvertCurrency(){};
-This line is correct. A method signature is created by declaring the return type, followed by the method name, and parentheses containing any input parameters.
+c) **```void ConvertCurrency(){};```**
+_This line is correct. A method signature is created by declaring the return type, followed by the method name, and parentheses containing any input parameters._
 
 #### 74. Suppose there's a method named Update. Which of the following correctly calls the method? 
 
 a) var update;
 
-b) Update();
-This answer is correct! A method is called using its name followed by parentheses.
+b) **```Update();```**
+_This answer is correct! A method is called using its name followed by parentheses._
 
-void Update();
+c) void Update();
 
 #### 75. Which of the following correctly declares a method? 
 
@@ -672,43 +667,44 @@ a) DisplayNumbers();
 
 b) void DisplayNumbers{};
 
-void DisplayNumbers() { }
-Correct. A method is declared using the return type, followed by parentheses () containing any parameters, and brackets {} to contain the method body.
+c) **```void DisplayNumbers() { }```**
+_Correct. A method is declared using the return type, followed by parentheses () containing any parameters, and brackets {} to contain the method body._
 
 #### 76. Which of the following correctly calls a method? 
 
-a) GenerateID();
-Correct! Methods are called using the name, followed by parentheses () and a semicolon.
+a) **```GenerateID();```**
+_Correct! Methods are called using the name, followed by parentheses () and a semicolon._
 
 b) void GenerateID() {}
 
-GenerateID;
+c) GenerateID;
 
 #### 77. Which of the following is true about the return keyword? 
 
 a) It's identical to the break keyword.
 
 b) **```It terminates the execution of a method.```**
-**Correct!** The return statement terminates execution of its method and returns control to the caller.
+_Correct! The return statement terminates execution of its method and returns control to the caller._
 
-It must always be used with a value or expression.
+c) It must always be used with a value or expression.
 
 #### 78. Which of the following method signatures correctly defines 3 integer parameters? 
 
 a) void Multiply(int a, b, c)
 
-b) void Multiply(int a, int b, int c)
-Correct! The data type for each parameter is included and parameters are comma separated.
+b) **```void Multiply(int a, int b, int c)```**
+_Correct! The data type for each parameter is included and parameters are comma separated._
 
-void Multiply(int a; int b; int c)
+c) void Multiply(int a; int b; int c)
+
 #### 79. Given the method signature, void Print(string name, string number = "", bool member = false), which of the following options correctly uses named and optional arguments? 
 
-a) Print("Tony", member: true);
-Correct! The optional argument is included using the parameter name followed by a :
+a) **```Print("Tony", member: true);```**
+_Correct! The optional argument is included using the parameter name followed by a :_
 
 b) Print(number: "555", member: false)
 
-Print("Tony", false)
+c) Print("Tony", false)
 
 #### 80. Given the following method signature, void SetHealth(string health), why don't operations inside the method affect the original input string health? 
 
@@ -716,8 +712,8 @@ a) The string data type is pass by value.
 
 b) The method code must be incorrect.
 
-```Strings can't be altered once assigned. They can only be overwritten with a new value.```
-Correct! Strings are pass by reference, but they're immutable and can't be altered once assigned.
+c) **```Strings can't be altered once assigned. They can only be overwritten with a new value.```**
+_Correct! Strings are pass by reference, but they're immutable and can't be altered once assigned._
 
 #### 81. What data type is returned from the following statement: return 100 * 0.5; 
 
@@ -725,45 +721,44 @@ a) An int type
 
 b) A decimal type
 
-A double type
-double is correct. Since an integer literal is being multiplied by a double, this line of code returns a double.
+c) **```A double type```**
+_double is correct. Since an integer literal is being multiplied by a double, this line of code returns a double._
 
 #### 82. Which type of method doesn't need to include a return statement? 
 
 a) string methods
 
-b) void methods
-void is correct! void methods don't need to use a return statement.
+b) **```void methods```**
+_void is correct! void methods don't need to use a return statement._
 
-array methods
-
+c) array methods
 
 #### 83. Which of the following options correctly returns a string value? 
 
-a) return "";
-Correct! An empty string is a valid string result.
+a) **```return "";```**
+_Correct! An empty string is a valid string result._
 
 b) return 'a';
 
-return 5;
+c) return 5;
 
 #### 84. Which of the following statements is true about the return keyword? 
 
 a) It starts a new iteration of a method.
 
-b) It terminates the execution of a method.
-Correct! The return statement terminates execution of its method and returns control to the caller.
+b) **```It terminates the execution of a method.```**
+_Correct! The return statement terminates execution of its method and returns control to the caller._
 
-It must always be used with a value or expression.
+c) It must always be used with a value or expression.
 
 #### 85. Which of the following options is a valid return statement? 
 
 a) return void;
 
-b) return 5 % 2;
-Correct! This statement would return the value of the expression 5 % 2
+b) **```return 5 % 2;```**
+_Correct! This statement would return the value of the expression 5 % 2_
 
-return Console.WriteLine();
+c) return Console.WriteLine();
 
 #### 86. What is the purpose of defining an optional parameter in a method? 
 
@@ -771,18 +766,17 @@ a) To cause a method to perform a different task.
 
 b) To overload a method.
 
-To simplify the required parameters when a parameter isn't significant to the result.
-Correct! Optional parameters enable you to pass fewer arguments and accomplish the method task.
+c) **```To simplify the required parameters when a parameter isn't significant to the result.```**
+_Correct! Optional parameters enable you to pass fewer arguments and accomplish the method task._
 
 #### 87. What is the purpose of pseudo-code? 
 
-a) To provide a design template for the intended code.
-Correct! Pseudo-code helps to bridge the gap between concept and code.
-
+a) **```To provide a design template for the intended code.```**
+_Correct! Pseudo-code helps to bridge the gap between concept and code._
 
 b) To safely cast operations performed in methods.
 
-To develop syntactically correct code.
+c) To develop syntactically correct code.
 
 
 #### 88. A developer wants to create a method that compares two values. Which of the following options is the best data type for the method to return? 
@@ -791,71 +785,71 @@ a) A double value.
 
 b) Nothing, the method should be void.
 
-A bool value.
-Correct! A comparison expression should return true or false.
+c) **```A bool value.```**
+_Correct! A comparison expression should return true or false._
 
 #### 89. A developer wants to create a method that returns a value in an array. Which of the following options would be a good choice for a method signature? 
 
-a) string GetValueAtIndex(string[] array, int index)
-Correct! This method accepts a string array and an index value and returns a string value.
+a) **```string GetValueAtIndex(string[] array, int index)```**
+_Correct! This method accepts a string array and an index value and returns a string value._
 
 b) bool GetValueAtIndex(string[] array, int index)
 
-int GetValueAtIndex(int index)
+c) int GetValueAtIndex(int index)
 
 #### 90. What is code debugging? 
 
 a) A process to identify code syntax errors during the build process.
 
-b) A process to isolate and fix issues in code logic.
-Correct. Code debugging involves isolating and fixing logic issues in code.
+b)**``` A process to isolate and fix issues in code logic.```**
+_Correct. Code debugging involves isolating and fixing logic issues in code._
 
+c) A process to verify that code builds and runs without errors.
 
-A process to verify that code builds and runs without errors.
 #### 91. Who is responsible for software testing? 
 
 a) Software developers.
-Incorrect. Although software developers have some responsibility for code testing, they share the responsibility with testers.
 
 b) Software testers.
 
-Both developers and testers.
-Correct. Software developers and testers share the responsibility for code testing.
+c) **```Both developers and testers.```**
+_Correct. Software developers and testers share the responsibility for code testing._
 
 #### 92. What happens if an exception isn't managed in code? 
 
 a) The code continues to run without any issue.
 
-b) The application generates an error message and closes.
-Correct. If an exception isn't managed in code, the runtime will display an error message and the application may be terminated.
+b) **```The application generates an error message and closes.```**
+_Correct. If an exception isn't managed in code, the runtime will display an error message and the application may be terminated._
 
-The code syntax errors are displayed to the user.
+c) The code syntax errors are displayed to the user.
 
 #### 93. What is a debugger? 
 
-a) A software tool used to observe and control the execution flow of a program.
-Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program.
+a) **```A software tool used to observe and control the execution flow of a program.```**
+_Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program._
 
 b) A program that generates code automatically based on user input.
 
-A tool that helps developers write their code faster.
+c) A tool that helps developers write their code faster.
+
 #### 94. What is the primary benefit of using a debugger? 
 
 a) A debugger helps developers to write code faster.
 
-b) A debugger enables developers to watch their application running and follow program execution one line of code at a time.
-Correct. The primary benefit of using a debugger is watching application code run and following program execution one line of code at a time.
+b) **```A debugger enables developers to watch their application running and follow program execution one line of code at a time.```**
+_Correct. The primary benefit of using a debugger is watching application code run and following program execution one line of code at a time._
 
-A debugger helps developers to add new features to their application.
+c) A debugger helps developers to add new features to their application.
 
 #### 95. What is one of the most important features of a debugger? 
 
 a) Code generation.
 
-b) Observation of your program's state.
-Correct. Observation of your program's state is one of the most important features that come with almost all debuggers.
+b) **```Observation of your program's state.```**
+_Correct. Observation of your program's state is one of the most important features that come with almost all debuggers._
 
-Automatic bug fixing.
+c) Automatic bug fixing.
 
 #### 96. What is the best way to find the root cause of a bug? 
 
@@ -863,71 +857,71 @@ a) Running your app with different data.
 
 b) Breadcrumbing a few Console.WriteLine("here") messages in your code.
 
-Using a debugger.
-Correct. Using a debugger is the best way to find the root cause of a bug.
+c) **```Using a debugger.```**
+_Correct. Using a debugger is the best way to find the root cause of a bug._
 
 #### 97. What is the purpose of catching an exception in C#? 
 
 a) To ignore errors that occur in a program.
 
-b) To take corrective action when an error occurs in a program.
-Correct. The purpose of catching an exception is to take corrective action when an error occurs.
+b) **```To take corrective action when an error occurs in a program.```**
+_Correct. The purpose of catching an exception is to take corrective action when an error occurs._
 
+c) To generate additional errors in a program.
 
-To generate additional errors in a program.
 #### 98. Can a developer access the contents of an exception at runtime? 
 
 a) No, exceptions can never be accessed.
 
-b) Yes, exceptions can be accessed and used to take corrective action.
-Correct. Exceptions are objects that can be accessed. The properties of an exception can be used to help determine corrective action.
+b) **```Yes, exceptions can be accessed and used to take corrective action.```**
+_Correct. Exceptions are objects that can be accessed. The properties of an exception can be used to help determine corrective action._
 
-Exceptions can be accessed, but not during the application runtime.
+c) Exceptions can be accessed, but not during the application runtime.
 
 #### 99. What happens when execution of a C# application results in a system error? 
 
 a) The program crashes and closes.
 
-b) An exception is created and thrown by the .NET runtime.
-Correct. The .NET runtime throws an exception when a C# application generates a system error.
+b) **```An exception is created and thrown by the .NET runtime.```**
+_Correct. The .NET runtime throws an exception when a C# application generates a system error._
 
-The error is silently ignored and the program continues to run.
+c) The error is silently ignored and the program continues to run.
+
 #### 100. What is the relationship between the type of exception and the information it contains? 
 
 a) The type of exception and the information it contains are unrelated.
 
-b) The type of exception determines the information it contains.
-Correct. The type of exception determines the information it contains.
+b) **```The type of exception determines the information it contains.```**
+_Correct. The type of exception determines the information it contains._
 
-The information contained in an exception determines the type of exception.
-Incorrect. The exception type determines what information the exception contains, not the other way around.
+c) The information contained in an exception determines the type of exception.
 
 #### 101. What is code debugging? 
 
 a) A process to identify code syntax errors during the build process.
 
-b) A process to isolate and fix issues in code logic.
-Correct. Code debugging involves isolating and fixing logic issues in code.
+b) **```A process to isolate and fix issues in code logic.```**
+_Correct. Code debugging involves isolating and fixing logic issues in code._
 
-A process to verify that code builds and runs without errors.
+c) A process to verify that code builds and runs without errors.
 
 #### 102. What is a debugger? 
 
-a) A software tool used to observe and control the execution flow of a program.
-Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program.
+a) **```A software tool used to observe and control the execution flow of a program.```**
+_Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program._
 
 b) A program that generates code automatically based on user input.
 
-A tool that helps developers write their code faster.
+c) A tool that helps developers write their code faster.
 
 #### 103. What happens when execution of a C# application results in a system error? 
 
 a) The program crashes and closes.
 
-b) The .NET runtime creates and throws an exception.
-Correct. The .NET runtime throws an exception when a C# application generates a system error.
+b) **```The .NET runtime creates and throws an exception.```**
+_Correct. The .NET runtime throws an exception when a C# application generates a system error._
 
-The error is silently ignored and the program continues to run.
+c) The error is silently ignored and the program continues to run.
 
 #### 104. What is the purpose of catching an exception in C#? 
 
@@ -935,59 +929,62 @@ a) To ignore the errors that occur in a program.
 
 b) To generate other exceptions in a program.
 
-To take corrective action when an error occurs in a program.
-Correct. The purpose of catching an exception is to take corrective action when an error occurs.
+c) **```To take corrective action when an error occurs in a program.```**
+_Correct. The purpose of catching an exception is to take corrective action when an error occurs._
 
 #### 105. What is the relationship between the type of exception and the information it contains? 
 
-a) The type of exception determines the information it contains.
-Correct. The type of exception determines the information it contains.
+a) **```The type of exception determines the information it contains.```**
+_Correct. The type of exception determines the information it contains._
 
 b) The type of exception and the information it contains are unrelated.
 
-The information contained in an exception determines the type of exception.
+c) The information contained in an exception determines the type of exception.
 
 #### 106. Which section of the Run menu enables a developer to edit or add launch configurations? 
 
 a) The start and stop applications section.
 
-b) The launch configurations section.
-Correct. The configurations section of the Run menu provides access to edit or add launch configurations in Visual Studio Code.
+b) **```The launch configurations section.```**
+_Correct. The configurations section of the Run menu provides access to edit or add launch configurations in Visual Studio Code._
 
-The install debuggers section.
+c) The install debuggers section.
+
 #### 107. Which section of the RUN AND DEBUG view is used to track the current point of execution within the running application? 
 
 a) VARIABLES section.
 
-b) CALL STACK section.
-Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application.
+b) **```CALL STACK section.```**
+_Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application._
 
-WATCH section.
+c) WATCH section.
+
 #### 108. Which button on the Debug toolbar can be used resume normal code execution? 
 
-a) The Pause/Continue button.
-Correct. The Pause/Continue button on the Debug toolbar can be used to pause execution when the code is running and continue when code execution has been paused.
+a) **```The Pause/Continue button.```**
+_Correct. The Pause/Continue button on the Debug toolbar can be used to pause execution when the code is running and continue when code execution has been paused._
 
 b) The Step Over button.
 
-The Restart button.
+c) The Restart button.
+
 #### 109. Which section of the Run menu enables the developer to set breakpoints on code lines? 
 
 a) The Manage Breakpoints section.
 
 b) The Start and stop applications section.
 
-The Set Breakpoints section.
-Correct. The Set Breakpoints section of the Run menu enables the developer to set breakpoints on code lines.
+c) **```The Set Breakpoints section.```**
+_Correct. The Set Breakpoints section of the Run menu enables the developer to set breakpoints on code lines._
 
 #### 110. What capability does the "More" dropdown on the right side of the Debug toolbar provide? 
 
-a) An option to disconnect the debugger.
-Correct. The "More" dropdown on the right side of the Debug toolbar enables a developer to disconnect the debugger from the current process
+a) **```An option to disconnect the debugger.```**
+_Correct. The "More" dropdown on the right side of the Debug toolbar enables a developer to disconnect the debugger from the current process_
 
 b) An option to edit launch configurations.
 
-An option to manage breakpoints.
+c) An option to manage breakpoints.
 
 #### 111. Which of the following can be used to configure and start a debug session? 
 
@@ -995,43 +992,44 @@ a) The Debug toolbar.
 
 b) The VARIABLES section of the RUN AND DEBUG view.
 
-The Run and Debug controls panel.
-Correct. The Run and Debug controls panel is used to configure and start a debug session from the RUN AND DEBUG view in Visual Studio Code.
+c) **```The Run and Debug controls panel.```**
+_Correct. The Run and Debug controls panel is used to configure and start a debug session from the RUN AND DEBUG view in Visual Studio Code._
 
 #### 112. Which of the following options can be used set a breakpoint in Visual Studio Code? 
 
-a) Left-click in the column to the left of a line number in the code editor.
-Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking.
+a) **```Left-click in the column to the left of a line number in the code editor.```**
+_Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking._
 
 b) Select Toggle Breakpoint on the Edit menu.
 
-Right-click in the middle of a line of code, and then select Toggle Breakpoint.
+c) Right-click in the middle of a line of code, and then select Toggle Breakpoint.
+
 #### 113. How can a developer disable a breakpoint in Visual Studio Code? 
 
 a) Click Remove Breakpoint on the Run menu.
 
-b) Right-click the red dot to the left of the line number and select Disable Breakpoint.
-Correct. A breakpoint can be disabled by right-clicking the red dot that represents a breakpoint and then selecting Disable Breakpoint.
+b) **```Right-click the red dot to the left of the line number and select Disable Breakpoint.```**
+_Correct. A breakpoint can be disabled by right-clicking the red dot that represents a breakpoint and then selecting Disable Breakpoint._
 
-Left-click the red dot to the left of the line number.
+c) Left-click the red dot to the left of the line number.
 
 #### 114. What happens when a developer disables a breakpoint in Visual Studio Code? 
 
 a) The breakpoint is removed from the code entirely.
 
-b) The breakpoint is skipped over during debugging.
-Correct. When a breakpoint is disabled, it is skipped over during debugging. In the user interface, the red dot representing the breakpoint is changed to a grey dot.
+b) **```The breakpoint is skipped over during debugging.```**
+_Correct. When a breakpoint is disabled, it is skipped over during debugging. In the user interface, the red dot representing the breakpoint is changed to a grey dot._
 
-The breakpoint will only be triggered if dot to the left of the line number is changed to a grey dot.
+c) The breakpoint will only be triggered if dot to the left of the line number is changed to a grey dot.
 
 #### 115. What is a conditional breakpoint in Visual Studio Code? 
 
-a) A breakpoint that only triggers when a specified condition is met.
-Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met.
+a) **```A breakpoint that only triggers when a specified condition is met.```**
+_Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met._
 
 b) A breakpoint that is triggered every time the code is run.
 
-A breakpoint that is only visible in the editor and doesn't affect debugging.
+c) A breakpoint that is only visible in the editor and doesn't affect debugging.
 
 #### 116. How can a developer create a conditional breakpoint in Visual Studio Code? 
 
@@ -1039,8 +1037,8 @@ a) Left-click in the column to the left of a line number in the code editor.
 
 b) Select Toggle Conditional Breakpoint on the Run menu.
 
-Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.
-Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint.
+c) **```Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.```**
+_Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint._
 
 #### 117. A developer updates a launch configuration. What is the name attribute used for? 
 
@@ -1048,62 +1046,62 @@ a) To specify the type of debugger used in a launch configuration.
 
 b) To specify the request type of a launch configuration.
 
-To specify the display name for a configuration.
-Correct. The name attribute specifies the display name for the configuration. The value assigned to name appears in the controls panel at the top of the RUN AND DEBUG view.
+c) **```To specify the display name for a configuration.```**
+_Correct. The name attribute specifies the display name for the configuration. The value assigned to name appears in the controls panel at the top of the RUN AND DEBUG view._
 
 #### 118. A developer is working on a launch configuration. What is the preLaunchTask attribute used for? 
 
 a) To specify the path of the application dll or .NET Core host executable to launch.
 
-b) To specify a task to run before debugging your program.
-Correct. The preLaunchTask attribute specifies a task to run before debugging the program. The task itself can be found in the tasks.json file, which is in the .vscode folder along with the launch.json file. Specifying a prelaunch task of build runs a dotnet build command before launching the application.
+_b) **```To specify a task to run before debugging your program.```**
+Correct. The preLaunchTask attribute specifies a task to run before debugging the program. The task itself can be found in the tasks.json file, which is in the .vscode folder along with the launch.json file. Specifying a prelaunch task of build runs a dotnet build command before launching the application._
 
+c) To specify the type of console that's used when the application is launched.
 
-To specify the type of console that's used when the application is launched.
 #### 119. What is the console attribute of a launch configuration used for? 
 
 a) Specifies the working directory of the target process.
 
 b) Specifies the type of debugger to use for this launch configuration.
 
-Specifies the type of console that's used when the application is launched.
-Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole.
+c) **```Specifies the type of console that's used when the application is launched.```**
+_Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole._
 
 #### 120. Which section of the RUN AND DEBUG view is used to track the current point of execution within the running application? 
 
 a) The VARIABLES section.
 
-b) The CALL STACK section.
-Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application.
+b) **```The CALL STACK section.```**
+_Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application._
 
+c) The WATCH section.
 
-The WATCH section.
 #### 121. Which of the following options can be used to set a breakpoint in Visual Studio Code? 
 
-a) Left-click in the column to the left of a line number in the code editor.
-Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking.
+a) **```Left-click in the column to the left of a line number in the code editor.```**
+_Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking._
 
 b) Select Toggle Breakpoint on the Edit menu.
 
-Right-click in the middle of a line of code, and then select Toggle Breakpoint.
+c) Right-click in the middle of a line of code, and then select Toggle Breakpoint.
 
 #### 122. How can a developer disable a breakpoint in Visual Studio Code? 
 
 a) Click Remove Breakpoint on the Run menu.
 
-b) Right-click the red dot to the left of the line number and select Disable Breakpoint.
-Correct. A breakpoint can be disabled by right-clicking the red dot that represents a breakpoint and then selecting Disable Breakpoint.
+b) **```Right-click the red dot to the left of the line number and select Disable Breakpoint.```**
+_Correct. A breakpoint can be disabled by right-clicking the red dot that represents a breakpoint and then selecting Disable Breakpoint._
 
-Left-click the red dot to the left of the line number.
+c) Left-click the red dot to the left of the line number.
 
 #### 123. What is a conditional breakpoint in Visual Studio Code? 
 
-a) A breakpoint that only triggers when a specified condition is met.
-Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met.
+a) **```A breakpoint that only triggers when a specified condition is met.```**
+_Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met._
 
 b) A breakpoint that is triggered every time the code is run.
 
-A breakpoint that is only visible in the editor and does not affect debugging.
+c) A breakpoint that is only visible in the editor and does not affect debugging.
 
 #### 124. How can a developer create a conditional breakpoint in Visual Studio Code? 
 
@@ -1111,8 +1109,8 @@ a) Left-click in the column to the left of a line number in the code editor.
 
 b) Select Toggle Conditional Breakpoint on the Run menu.
 
-Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.
-Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint.
+c) **```Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.```**
+_Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint._
 
 #### 125. In a launch configuration file, what is the console attribute used for? 
 
@@ -1120,34 +1118,35 @@ a) Specifies the working directory of the target process.
 
 b) Specifies the type of debugger to use for this launch configuration.
 
-Specifies the type of console that's used when the application is launched.
-Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole.
+c) **```Specifies the type of console that's used when the application is launched.```**
+_Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole._
 
 #### 126. Which of the following answer choices lists the C# keywords used for exception handling? 
 
 a) try, catch, and finally.
 
-b) try, catch, finally, and throw.
-Correct. The try, catch, finally, and throw keywords are used for exception handling in C#.
+b) **```try, catch, finally, and throw.```**
+_Correct. The try, catch, finally, and throw keywords are used for exception handling in C#._
 
-try, catch, and throw.
+c) try, catch, and throw.
+
 #### 127. What does the try code block contain? 
 
 a) The code that cleans up resources and is executed whether an exception occurs or not.
 
 b) The code that throws an exception object.
 
-The code that may cause an exception.
-Correct. The try code block contains the guarded code that may cause an exception.
+c) **```The code that may cause an exception.```**
+_Correct. The try code block contains the guarded code that may cause an exception._
 
 #### 128. What is the purpose of the catch code block? 
 
 a) To clean up any resources that are allocated in a try block.
 
-b) To handle the exception, log it, or ignore it.
-Correct. The catch code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it.
+b) **```To handle the exception, log it, or ignore it.```**
+_Correct. The catch code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it._
 
-To execute code that may cause an exception.
+c) To execute code that may cause an exception.
 
 #### 129. What is the purpose of the finally block? 
 
@@ -1155,8 +1154,8 @@ a) To execute code that may cause an exception.
 
 b) To handle the exception, log it, or ignore it.
 
-To clean up any resources that are allocated in a try block.
-Correct. The finally block is often used to clean up any resources that are allocated in a try block. The finally code block contains code that executes whether an exception occurs or not.
+c) **```To clean up any resources that are allocated in a try block.```**
+_Correct. The finally block is often used to clean up any resources that are allocated in a try block. The finally code block contains code that executes whether an exception occurs or not._
 
 #### 130. When is an ArrayTypeMismatchException exception thrown? 
 
@@ -1164,35 +1163,35 @@ a) An ArrayTypeMismatchException exception is thrown when an attempt is made to 
 
 b) An ArrayTypeMismatchException exception is thrown when an attempt is made to index an array outside the bounds of the array.
 
-An ArrayTypeMismatchException exception is thrown when an attempt is made to store a value of one type in an array of another type.
-Correct. The ArrayTypeMismatchException exception is thrown when an attempt is made to store an element of the wrong type within an array.
+c) **```An ArrayTypeMismatchException exception is thrown when an attempt is made to store a value of one type in an array of another type.```**
+_Correct. The ArrayTypeMismatchException exception is thrown when an attempt is made to store an element of the wrong type within an array._
 
 #### 131. When is a DivideByZeroException exception thrown? 
 
-a) A DivideByZeroException exception is thrown when an attempt is made to divide an integral value by zero.
-Correct. A DivideByZeroException is thrown when trying to divide an integer or Decimal number by zero.
+a) **```A DivideByZeroException exception is thrown when an attempt is made to divide an integral value by zero.```**
+_Correct. A DivideByZeroException is thrown when trying to divide an integer or Decimal number by zero._
 
 b) A DivideByZeroException exception is thrown when an attempt is made to index an array outside the bounds of the array.
 
-A DivideByZeroException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+c) A DivideByZeroException exception is thrown when an attempt is made to store a value of one type in an array of another type.
 
 #### 132. When is an IndexOutOfRangeException exception thrown? 
 
 a) An IndexOutOfRangeException exception is thrown when an attempt is made to divide an integral value by zero.
 
-An IndexOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.
-Correct. An IndexOutOfRangeException exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
+b)**```An IndexOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.```**
+_Correct. An IndexOutOfRangeException exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds._
 
+c)An IndexOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
 
-An IndexOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
 #### 133. When is an InvalidCastException exception thrown? 
 
 a) An InvalidCastException exception is thrown when an attempt is made to divide an integral value by zero.
 
 b) An InvalidCastException exception is thrown when an attempt is made to store a value of one type in an array of another type.
 
-An InvalidCastException exception is thrown when attempting an invalid casting or explicit conversion.
-Correct. An InvalidCastException exception is thrown when attempting an invalid casting or explicit conversion.
+c) **```An InvalidCastException exception is thrown when attempting an invalid casting or explicit conversion.```**
+_Correct. An InvalidCastException exception is thrown when attempting an invalid casting or explicit conversion._
 
 #### 134. When is a NullReferenceException exception thrown? 
 
@@ -1200,8 +1199,8 @@ a) A NullReferenceException exception is thrown when attempting an invalid casti
 
 b) A NullReferenceException exception is thrown when an attempt is made to store a value of one type in an array of another type.
 
-A NullReferenceException exception is thrown when attempting to access a member on a type whose value is null.
-Correct. A NullReferenceException exception is thrown when attempting to access a member on a type whose value is null.
+c) **```A NullReferenceException exception is thrown when attempting to access a member on a type whose value is null.```**
+_Correct. A NullReferenceException exception is thrown when attempting to access a member on a type whose value is null._
 
 #### 135. What does the try code block contain? 
 
@@ -1209,63 +1208,62 @@ a) The code that cleans up resources and is executed whether an exception occurs
 
 b) The code that throws an exception object.
 
-The code that may cause an exception.
-Correct. The try code block contains the guarded code that may cause an exception.
+c) **```The code that may cause an exception.```**
+_Correct. The try code block contains the guarded code that may cause an exception._
 
 #### 136. What is the purpose of the catch code block? 
 
 a) To clean up any resources that are allocated in a try block.
 
-b) To handle the exception, log it, or ignore it.
-Correct. The catch code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it.
+b) **```To handle the exception, log it, or ignore it.```**
+_Correct. The catch code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it._
 
+c) To execute code that may cause an exception.
 
-To execute code that may cause an exception.
 #### 137. When is an IndexOutOfRangeException exception thrown? 
 
 a) An IndexOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
 
 b) An IndexOutOfRangeException exception is thrown when attempting an invalid casting or explicit conversion.
 
-An IndexOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.
-Correct. An IndexOutOfRangeException exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
+c) **```An IndexOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.```**
+_Correct. An IndexOutOfRangeException exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds._
 
 #### 138. When is an ArrayTypeMismatchException exception thrown? 
 
-a) An ArrayTypeMismatchException exception is thrown when an attempt is made to store a value of one type in an array of another type.
-Correct. The ArrayTypeMismatchException exception is thrown when an attempt is made to store an element of the wrong type within an array.
-
+a) **```An ArrayTypeMismatchException exception is thrown when an attempt is made to store a value of one type in an array of another type.```**
+_Correct. The ArrayTypeMismatchException exception is thrown when an attempt is made to store an element of the wrong type within an array._
 
 b) An ArrayTypeMismatchException exception is thrown when attempting to access a member on a type whose value is null.
 
-An ArrayTypeMismatchException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+c) An ArrayTypeMismatchException exception is thrown when an attempt is made to index an array outside the bounds of the array.
+
 #### 139. What is the name of the base class that all derived exception types inherit from? 
 
 a) Object.
 
 b) System.
 
-Exception.
-Correct. In C#, System.Exception is the base class that all derived exception types inherit from.
+c) **```Exception.```**
+_Correct. In C#, System.Exception is the base class that all derived exception types inherit from._
 
 #### 140. Which property of an exception object can be used to determine where an error occurred? 
 
 a) InnerException.
 
-b) StackTrace.
-Correct. The StackTrace property contains a stack trace that can be used to determine where an error occurred.
+b) **```StackTrace.```**
+_Correct. The StackTrace property contains a stack trace that can be used to determine where an error occurred._
 
-TargetSite.
+c) TargetSite.
 
 #### 141. What is the recommended approach for catching exceptions in C#? 
 
 a) Catch any type of exception without specifying an object argument.
-Incorrect. Catching any type of exception without specifying an object argument isn't recommended.
 
-b) Catch only the exceptions that your code knows how to recover from.
-Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from.
+b) **```Catch only the exceptions that your code knows how to recover from.```**
+_Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from._
 
-Catch only the exceptions that are not derived from System.Exception.
+c) Catch only the exceptions that are not derived from System.Exception.
 
 #### 142. What is the name of the specific exception type that occurs when attempting to divide by zero in C#? 
 
@@ -1273,56 +1271,53 @@ a) ArithmeticException.
 
 b) InvalidCastException.
 
-DivideByZeroException.
-Correct. In C#, the specific exception type that occurs when attempting to divide by zero is DivideByZeroException.
+c) **```DivideByZeroException.```**
+_Correct. In C#, the specific exception type that occurs when attempting to divide by zero is DivideByZeroException._
 
 #### 143. What is the purpose of the StackTrace property of an exception object? 
 
-a) To track the origin of the exception.
-Correct. The StackTrace property is often used to track the origin of the exception.
+a) **```To track the origin of the exception.```**
+_Correct. The StackTrace property is often used to track the origin of the exception._
 
-To configure the properties of the exception.
+b) To configure the properties of the exception.
 
-To throw the exception object.
+c) To throw the exception object.
 
 #### 144. Which of the following code lines provides an example of customizing an exception with contextual information? 
 
 a) Code: throw new FormatException();.
 
-b) Code: ArgumentException invalidArgumentException = new ArgumentException("ArgumentException: The 'GraphData' method received data outside the expected range.");.
-Correct. This code sample demonstrates how to create an exception object with a custom Message property.
+b) **```Code: ArgumentException invalidArgumentException = new ArgumentException("ArgumentException: The 'GraphData' method received data outside the expected range.");.```**
+_Correct. This code sample demonstrates how to create an exception object with a custom Message property._
 
-
-Code: ArgumentNullException argumentNullException = new ArgumentNullException();.
+c) Code: ArgumentNullException argumentNullException = new ArgumentNullException();.
 
 #### 145. A developer needs to create and throw an exception in a C# application. Which of the following descriptions is correct? 
 
 a) The exception type shouldn't match the intended purpose of the exception.
 
-b) The exception type that they create depends on the coding issue.
-Correct. The exception type created depends on the coding issue and should match the intended purpose of the exception as closely as possible.
+b) **```The exception type that they create depends on the coding issue.```**
+_Correct. The exception type created depends on the coding issue and should match the intended purpose of the exception as closely as possible._
 
+c) The process for throwing an exception object involves using the catch keyword.
 
-The process for throwing an exception object involves using the catch keyword.
 #### 146. When should a method throw an exception? 
 
 a) A method should throw an exception when the method can complete its intended purpose.
-Incorrect. Methods should only throw an exception when an issue or error is detected that prevents them from completing their intended purpose.
 
+b) **```A method should throw an exception when the method can't complete its intended purpose.```**
+_Correct. Methods should throw an exception whenever they can't complete their intended purpose._
 
-b) A method should throw an exception when the method can't complete its intended purpose.
-Correct. Methods should throw an exception whenever they can't complete their intended purpose.
+c) A method should throw an exception when an exception type matches the intended purpose of the method.
 
-
-A method should throw an exception when an exception type matches the intended purpose of the method.
 #### 147. A developer needs to create an exception object that includes a specific Message property. Which of the following statements is correct? 
 
 a) The Message property of an exception is writable.
 
 b) The Message property shouldn't explain the reason for the exception.
 
-The Message property should explain the reason for the exception.
-Correct. The Message property of an exception should explain the reason for the exception. Since Message is a read-only property, it must be assigned when instantiating the exception object.
+c) **```The Message property should explain the reason for the exception.```**
+_Correct. The Message property of an exception should explain the reason for the exception. Since Message is a read-only property, it must be assigned when instantiating the exception object._
 
 #### 148. What is the purpose of catching an exception in C#? 
 
@@ -1330,45 +1325,44 @@ a) To ignore the errors that occur in a program.
 
 b) To generate other exceptions in a program.
 
-To take corrective action when an error occurs in a program.
-Correct. The purpose of catching an exception is to take corrective action when an error occurs.
+c) **```To take corrective action when an error occurs in a program.```**
+_Correct. The purpose of catching an exception is to take corrective action when an error occurs._
 
 #### 149. What is the relationship between the type of exception and the information it contains? 
 
 a) The type of exception and the information it contains are unrelated.
 
-b) The type of exception determines the information it contains.
-Correct. The type of exception determines the information it contains.
+b) **```The type of exception determines the information it contains.```**
+_Correct. The type of exception determines the information it contains._
 
-The information contained in an exception determines the type of exception.
+c) The information contained in an exception determines the type of exception.
 
 #### 150. What is a conditional breakpoint in Visual Studio Code? 
 
-a) A breakpoint that only triggers when a specified condition is met.
-Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met.
+a) **```A breakpoint that only triggers when a specified condition is met.```**
+_Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met._
 
-A breakpoint that is triggered every time the code is run.
+b) A breakpoint that is triggered every time the code is run.
 
-A breakpoint that is only visible in the editor and doesn't affect debugging.
+c) A breakpoint that is only visible in the editor and doesn't affect debugging.
 
 #### 151. When is an ArgumentOutOfRangeException exception thrown? 
 
 a) An ArgumentOutOfRangeException exception is thrown when an attempt is made to index an array outside the bounds of the array.
-Incorrect. This answer choice describes when an IndexOutOfRangeException exception is thrown.
 
-b) An ArgumentOutOfRangeException exception is thrown when the value of an argument is outside the allowable range of values as defined by the method.
-Correct. An ArgumentOutOfRangeException exception should only be thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+b) **```An ArgumentOutOfRangeException exception is thrown when the value of an argument is outside the allowable range of values as defined by the method.```**
+_Correct. An ArgumentOutOfRangeException exception should only be thrown when the value of an argument is outside the allowable range of values as defined by the invoked method._
 
-An ArgumentOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
+c) An ArgumentOutOfRangeException exception is thrown when an attempt is made to store a value of one type in an array of another type.
 
 #### 152. What is the recommended approach for catching exceptions in C#? 
 
 a) Catch any type of exception without specifying an object argument.
 
-b) Catch only the exceptions that your code knows how to recover from.
-Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from.
+b) **```Catch only the exceptions that your code knows how to recover from.```**
+_Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from._
 
-Catch only the exceptions that aren't derived from System.Exception.
+c) Catch only the exceptions that aren't derived from System.Exception.
 
 #### 153. How can a developer create a conditional breakpoint in Visual Studio Code? 
 
@@ -1376,8 +1370,8 @@ a) Left-click in the column to the left of a line number in the code editor.
 
 b) Select Toggle Conditional Breakpoint on the Run menu.
 
-Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.
-Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint.
+c) **```Right-click in the column to the left of a line number, and then select Add Conditional Breakpoint.```**
+_Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting Add Conditional Breakpoint._
 
 #### 154. In a launch configuration file, what is the console attribute used for? 
 
@@ -1385,24 +1379,23 @@ a) Specifies the working directory of the target process.
 
 b) Specifies the type of debugger to use for this launch configuration.
 
-Specifies the type of console that's used when the application is launched.
-Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole.
+c) **```Specifies the type of console that's used when the application is launched.```**
+_Correct. The console attribute specifies the type of console that's used when the application is launched. The options are internalConsole, integratedTerminal, and externalTerminal. The default setting is internalConsole._
 
 #### 155. Which section of the RUN AND DEBUG view is used to track the current point of execution within the running application? 
 
 a) The VARIABLES section.
 
-b) The CALL STACK section.
-Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application.
+b) **```The CALL STACK section.```**
+_Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application._
 
-The WATCH section.
-Incorrect. The WATCH section is used to monitor variables or expressions.
+c) The WATCH section.
 
 #### 156. Which of the following options can be used set a breakpoint in Visual Studio Code? 
 
-a) Left-click in the column to the left of a line number in the code editor.
-Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking.
+a) **```Left-click in the column to the left of a line number in the code editor.```**
+_Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking._
 
 b) Select Toggle Breakpoint on the Edit menu.
 
-Right-click in the middle of a line of code, and then select Toggle Breakpoint.
+c) Right-click in the middle of a line of code, and then select Toggle Breakpoint.
