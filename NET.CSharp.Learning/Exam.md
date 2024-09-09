@@ -273,7 +273,7 @@ a) The default case will execute.
 b) The impacted case sections will be removed by the compiler.
 
 c) **```The compiler will generate an error.```**
-Correct! Only one switch section is allowed to be executed. If you forget the break keyword (or, optionally, the return keyword) the compiler will generate an error.
+_Correct! Only one switch section is allowed to be executed. If you forget the break keyword (or, optionally, the return keyword) the compiler will generate an error._
 
 #### 32. Which of the following for statements is correct? 
 
@@ -282,16 +282,16 @@ a) for (int x = 20: x < 80: x++)
 b) for (int j = 0; j < 80; j + 1)
 
 c) **```for (int counter = 20; counter < 80; counter++)```**
-Correct!
+_Correct!_
 
 #### 33. Which of the following statements should be used to exit out of a for loop before the iteration has completed? 
 
 a) exit;
 
-b) break;
-Correct! The break keyword can be used to jump out of a for loop when a desired condition is met.
+b) **```break;```**
+_Correct! The break keyword can be used to jump out of a for loop when a desired condition is met._
 
-return;
+c) return;
 
 
 #### 34. Which of the following correctly describes a behavior of either a do-while or while iterative statement? 
@@ -300,8 +300,8 @@ a) A do-while statement executes a code block zero or more times.
 
 b) A while statement executes a code block at least once.
 
-A do-while statement executes a code block at least once.
-Correct! The do-while iterates through a code block at least one time. Code execution exits the iteration loop once the while expression at the end of the code block evaluates to true.
+c) **```A do-while statement executes a code block at least once.```**
+_Correct! The do-while iterates through a code block at least one time. Code execution exits the iteration loop once the while expression at the end of the code block evaluates to true._
 
 #### 35. A developer needs to capture user input inside a loop. The user enters the keyboard combination ctrl + Esc to exit the iteration when they're done entering information. Which is the best iteration statement for this purpose? 
 
@@ -309,38 +309,38 @@ a) while
 
 b) for
 
-do-while
-Correct! The do-while allows the developer to check each entry by the user until they enter the special keyboard combination to exit.
+c) **```do-while```**
+_Correct! The do-while allows the developer to check each entry by the user until they enter the special keyboard combination to exit._
 
 
 
 #### 36. A developer needs to iterate through an array of items. The number of items in the array is unknown. The code inside the iteration code block examines each item sequentially to select an item that matches specified criteria. The index number of the selected array element isn't important. The selected item is referenced multiple times within the code block. Which type of iteration statement is best suited for this scenario? 
 
-a) foreach
-Correct! It's possible to use any of these iteration types for the conditions described, but a foreach is best suited for this scenario. The foreach is easy to implement when the number of array elements is unknown. The foreach is a good choice when the index number of the selected array element isn't important. The foreach might run faster when the selected item is used multiple times within the code block.
+a) **```foreach```**
+_Correct! It's possible to use any of these iteration types for the conditions described, but a foreach is best suited for this scenario. The foreach is easy to implement when the number of array elements is unknown. The foreach is a good choice when the index number of the selected array element isn't important. The foreach might run faster when the selected item is used multiple times within the code block._
 
 b) for
 
-while
+c) while
 
 #### 37. A developer needs to capture a list of items from the user. The user will enter the keyboard combination ctrl + Esc to exit. Which is the best iteration statement for this purpose? 
 
 a) foreach
 
-b) do-while
-Correct! The do-while will allow the code to check each entry by the user until they enter the special keyboard combination to exit.
+b) **```do-while```**
+_Correct! The do-while will allow the code to check each entry by the user until they enter the special keyboard combination to exit._
 
-while
+c) while
 
 
 #### 38. When is it appropriate to use a switch-case construct rather than a if-elseif-else construct? 
 
-a) A switch-case construct is appropriate when more than 2-3 else if code blocks are required.
-Correct! When more than 2-3 else if code blocks are required, the code can become difficult to read, and the switch-case construct is preferable
+a) **```A switch-case construct is appropriate when more than 2-3 else if code blocks are required.```**
+_Correct! When more than 2-3 else if code blocks are required, the code can become difficult to read, and the switch-case construct is preferable_
 
 b) A switch-case construct is appropriate when the number of case patterns is small.
 
-A switch-case construct is appropriate when the selection statement is inside a loop.
+c) A switch-case construct is appropriate when the selection statement is inside a loop.
 
 #### 39. Why should a developer choose a for statement rather than a foreach statement when processing the contents of a multidimensional array? 
 
@@ -349,7 +349,7 @@ a) for statements do a better job of examining each array item separately.
 b) foreach statements do a better job of examining each array item separately.
 
 for statements enable a developer to treat array dimensions separately.
-Correct! When their code is processing the contents of a multidimensional array, a developer often wants to iterate through the array dimensions separately. The for statement provides better support for processing array dimensions separately.
+_Correct! When their code is processing the contents of a multidimensional array, a developer often wants to iterate through the array dimensions separately. The for statement provides better support for processing array dimensions separately._
 
 #### 40. Why is it important to scope a variable at its lowest necessary level? 
 
