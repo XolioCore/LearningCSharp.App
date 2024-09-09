@@ -428,19 +428,20 @@ Other simple Boolean expressions can be created by using operators to compare tw
 - >=, the "greater than or equal to" operator
 - <=, the "less than or equal to" operator
 
-### What is a code block?
-A code block is a collection of one or more lines of code that are defined by an opening and closing curly brace symbol { }.
 
-## Code blocks and variable scope
-- When you declare a variable inside a code block, its visibility is local to that code block and that variable cannot be accessed outside of the code block.
-- To ensure that a variable is visible both inside and outside of a code block, you must declare the variable prior to the code block (outside and above the code block).
-- Ensure that variables are initialized before your code attempts to access them (for all potential code execution paths).
+## What is a code block?
+A code block is a collection of one or more lines of code that are defined by an opening and closing curly brace symbol { }.
 
 ### Code Block
 - A code block is one or more C# statements that define an execution path.
 - The statements outside of a code block affect when, if, and how often that block of code is executed at run time.
 - The boundaries of a code block are typically defined by squiggly braces, {}.
 
+### Code blocks and variable scope
+- When you declare a variable inside a code block, its visibility is local to that code block and that variable cannot be accessed outside of the code block.
+- To ensure that a variable is visible both inside and outside of a code block, you must declare the variable prior to the code block (outside and above the code block).
+- Ensure that variables are initialized before your code attempts to access them (for all potential code execution paths).
+- 
 ### Variable scope 
 - Refers to a variable's visibility to the other code in your application.
 - A locally scoped variable is only accessible inside of the code block in which it's defined.
